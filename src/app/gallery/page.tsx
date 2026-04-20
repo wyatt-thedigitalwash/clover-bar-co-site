@@ -99,7 +99,7 @@ export default function GalleryPage() {
   return (
     <>
       {/* ─── Section 1: Page hero ─── */}
-      <section data-bg="light" className="bg-white py-24 md:py-30">
+      <section data-bg="light" className="bg-white pt-14 md:pt-18 pb-24 md:pb-30">
         <div className="mx-auto max-w-[720px] px-5 md:px-10">
           <span className="font-body text-xs font-semibold uppercase tracking-[0.2em] text-forest">
             Gallery

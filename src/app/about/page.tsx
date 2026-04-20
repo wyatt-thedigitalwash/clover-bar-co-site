@@ -41,7 +41,7 @@ export default function AboutPage() {
   return (
     <>
       {/* ─── Section 1: Page hero / Meet Sydni ─── */}
-      <section data-bg="light" className="bg-white py-24 md:py-30">
+      <section data-bg="light" className="bg-white pt-14 md:pt-18 pb-24 md:pb-30">
         <div className="mx-auto max-w-7xl px-5 md:px-10 flex flex-col lg:flex-row lg:items-center gap-12 lg:gap-16">
           {/* Desktop portrait (left column) */}
           <div className="hidden lg:block lg:w-[45%]">

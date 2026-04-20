@@ -153,7 +153,7 @@ export default function ServicesPage() {
   return (
     <>
       {/* ─── Section 1: Page hero ─── */}
-      <section data-bg="light" className="bg-white py-24 md:py-30">
+      <section data-bg="light" className="bg-white pt-14 md:pt-18 pb-24 md:pb-30">
         <div className="mx-auto max-w-7xl px-5 md:px-10 flex flex-col md:flex-row md:items-center gap-12 md:gap-16">
           <div className="md:w-[55%]">
             <span className="font-body text-xs font-semibold uppercase tracking-[0.2em] text-forest">

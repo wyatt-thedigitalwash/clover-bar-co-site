@@ -11,7 +11,7 @@ export default function ContactPage() {
   return (
     <>
       {/* ─── Section 1: Page hero ─── */}
-      <section data-bg="light" className="bg-white pt-24 md:pt-30 pb-12 md:pb-16">
+      <section data-bg="light" className="bg-white pt-14 md:pt-18 pb-12 md:pb-16">
         <div className="mx-auto max-w-7xl px-5 md:px-10">
           <span className="font-body text-xs font-semibold uppercase tracking-[0.2em] text-forest">
             Inquire

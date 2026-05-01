@@ -8,99 +8,166 @@ export const metadata: Metadata = {
     "A look at the bar, the drinks, and the details. Clover Mobile Bar Co., mobile bartending across New England.",
 };
 
-/* PLACEHOLDER IMAGES — All twelve image paths need to be replaced with real
-   Clover photography during the asset mapping pass. */
-const images: {
+type GalleryImage = {
   src: string;
   alt: string;
-  aspect: string;
-  colSpan: string;
-}[] = [
-  // Row 1
+  mobileAspect: string;
+};
+
+type GalleryRow = {
+  height: string;
+  images: (GalleryImage & { widthClass: string })[];
+};
+
+const rows: GalleryRow[] = [
+  // Row 1: 50/50
   {
-    src: "/assets/sydni-behind-clover-mobile-bar.webp",
-    alt: "The Clover mobile bar styled and ready, Sydni standing behind it.",
-    aspect: "aspect-[4/3]",
-    colSpan: "md:col-span-7",
+    height: "h-[420px] md:h-[560px]",
+    images: [
+      {
+        src: "/assets/gallery-8.jpg",
+        alt: "Sydni shaking a gold cocktail shaker behind the Clover mobile bar.",
+        mobileAspect: "aspect-[3/4]",
+        widthClass: "w-1/2",
+      },
+      {
+        src: "/assets/gallery-16.jpg",
+        alt: "Three signature cocktails styled with citrus, dried flowers, and fresh garnishes.",
+        mobileAspect: "aspect-[3/4]",
+        widthClass: "w-1/2",
+      },
+    ],
   },
+  // Row 2: thirds
   {
-    src: "/assets/sydni-shaking-cocktail.webp",
-    alt: "Sydni behind the bar, shaking a cocktail in a gold shaker.",
-    aspect: "aspect-[3/4]",
-    colSpan: "md:col-span-5",
+    height: "h-[380px] md:h-[480px]",
+    images: [
+      {
+        src: "/assets/gallery-5.jpg",
+        alt: "Two Clover-branded cocktails being cheersed, one with cucumber and one with citrus.",
+        mobileAspect: "aspect-[4/5]",
+        widthClass: "w-1/3",
+      },
+      {
+        src: "/assets/gallery-10.jpg",
+        alt: "A cocktail being strained through a gold mesh strainer into a salt-rimmed glass.",
+        mobileAspect: "aspect-[4/5]",
+        widthClass: "w-1/3",
+      },
+      {
+        src: "/assets/gallery-4.jpg",
+        alt: "Sydni raising a glass of champagne beside a Lucky You pillow.",
+        mobileAspect: "aspect-[3/4]",
+        widthClass: "w-1/3",
+      },
+    ],
   },
-  // Row 2
+  // Row 3: narrow + wide
   {
-    src: "/assets/cocktail-disco.webp",
-    alt: "A coupe glass with garnishes beside a disco ball on the Clover bar.",
-    aspect: "aspect-[4/5]",
-    colSpan: "md:col-span-4",
+    height: "h-[420px] md:h-[560px]",
+    images: [
+      {
+        src: "/assets/gallery-11.jpg",
+        alt: "The Clover bar styled with a framed cocktail menu, florals, and branded drinks.",
+        mobileAspect: "aspect-[3/4]",
+        widthClass: "w-[42%]",
+      },
+      {
+        src: "/assets/gallery-15.jpg",
+        alt: "A lineup of garnished cocktails on the Clover bar mat with mixers in the background.",
+        mobileAspect: "aspect-[3/4]",
+        widthClass: "w-[58%]",
+      },
+    ],
   },
+  // Row 4: thirds
   {
-    src: "/assets/rimming-glass-salt-station.webp",
-    alt: "Hands rimming a glass with salt at the Clover bar station.",
-    aspect: "aspect-[1/1]",
-    colSpan: "md:col-span-4",
+    height: "h-[340px] md:h-[420px]",
+    images: [
+      {
+        src: "/assets/gallery-1.jpg",
+        alt: "Three colorful cocktails with gold bar tools on the Clover bar mat, overhead view.",
+        mobileAspect: "aspect-[1/1]",
+        widthClass: "w-1/3",
+      },
+      {
+        src: "/assets/gallery-12.jpg",
+        alt: "Gold bar tools, strainers, and shakers arranged on the Clover bar mat.",
+        mobileAspect: "aspect-[3/2]",
+        widthClass: "w-1/3",
+      },
+      {
+        src: "/assets/gallery-2.jpg",
+        alt: "Two lime margaritas in coupe glasses with clover garnishes and fresh limes.",
+        mobileAspect: "aspect-[3/4]",
+        widthClass: "w-1/3",
+      },
+    ],
   },
+  // Row 5: wide + narrow
   {
-    src: "/assets/jalapeno-margarita-garnish.webp",
-    alt: "A jalapeno margarita being garnished with a pepper slice.",
-    aspect: "aspect-[4/5]",
-    colSpan: "md:col-span-4",
+    height: "h-[420px] md:h-[560px]",
+    images: [
+      {
+        src: "/assets/gallery-6.jpg",
+        alt: "The full Clover bar setup with mixers, florals, and branded cups at a venue.",
+        mobileAspect: "aspect-[4/3]",
+        widthClass: "w-[58%]",
+      },
+      {
+        src: "/assets/gallery-13.jpg",
+        alt: "A mocktail bar setup with Clover business cards and a framed mocktail menu.",
+        mobileAspect: "aspect-[3/4]",
+        widthClass: "w-[42%]",
+      },
+    ],
   },
-  // Row 3
+  // Row 6: thirds
   {
-    src: "/assets/cocktail-menu-florals.webp",
-    alt: "A printed cocktail menu in a green velvet frame with fresh florals.",
-    aspect: "aspect-[3/4]",
-    colSpan: "md:col-span-5",
+    height: "h-[380px] md:h-[480px]",
+    images: [
+      {
+        src: "/assets/gallery-7.jpg",
+        alt: "Sydni stirring a row of fresh cocktails with a gold bar spoon.",
+        mobileAspect: "aspect-[4/5]",
+        widthClass: "w-1/3",
+      },
+      {
+        src: "/assets/gallery-3.jpg",
+        alt: "The Clover bar topped with a cocktail menu, florals, garnishes, and a lineup of drinks.",
+        mobileAspect: "aspect-[3/4]",
+        widthClass: "w-1/3",
+      },
+      {
+        src: "/assets/gallery-9.jpg",
+        alt: "Sydni serving a garnished cocktail from behind the bar with a lineup of drinks.",
+        mobileAspect: "aspect-[4/5]",
+        widthClass: "w-1/3",
+      },
+    ],
   },
+  // Row 7: full width
   {
-    src: "/assets/cocktails-bar-tools-overhead.webp",
-    alt: "Three colorful cocktails with gold bar tools, overhead angle.",
-    aspect: "aspect-[4/3]",
-    colSpan: "md:col-span-7",
-  },
-  // Row 4
-  {
-    src: "/assets/cocktail-menu-setup.webp",
-    alt: "The Clover cocktail menu and business cards styled with florals.",
-    aspect: "aspect-[1/1]",
-    colSpan: "md:col-span-4",
-  },
-  {
-    src: "/assets/sydni-serving-margarita.webp",
-    alt: "Sydni holding out a finished margarita toward the camera.",
-    aspect: "aspect-[4/5]",
-    colSpan: "md:col-span-4",
-  },
-  {
-    src: "/assets/margarita-straining-closeup.webp",
-    alt: "Close-up of a margarita being strained through a gold mesh strainer.",
-    aspect: "aspect-[1/1]",
-    colSpan: "md:col-span-4",
-  },
-  // Row 5
-  {
-    src: "/assets/sydni-and-guest-behind-bar.webp",
-    alt: "Sydni and a guest smiling behind the Clover bar at a party.",
-    aspect: "aspect-[4/3]",
-    colSpan: "md:col-span-7",
-  },
-  {
-    src: "/assets/bar-prep-mixers-garnishes.webp",
-    alt: "Fresh mixers, garnishes, and bottles arranged for event prep.",
-    aspect: "aspect-[3/4]",
-    colSpan: "md:col-span-5",
+    height: "h-[260px] md:h-[400px]",
+    images: [
+      {
+        src: "/assets/gallery-14.jpg",
+        alt: "Mixers, cans, fresh herbs, and garnishes staged on the Clover bar before an event.",
+        mobileAspect: "aspect-[16/9]",
+        widthClass: "w-full",
+      },
+    ],
   },
 ];
+
+const allImages = rows.flatMap((r) => r.images);
 
 export default function GalleryPage() {
   return (
     <>
       {/* ─── Section 1: Page hero ─── */}
-      <section data-bg="light" className="bg-white pt-14 md:pt-18 pb-24 md:pb-30">
-        <div className="mx-auto max-w-[720px] px-5 md:px-10">
+      <section data-bg="light" className="bg-white pt-14 md:pt-18 pb-16 md:pb-20">
+        <div className="mx-auto max-w-7xl px-5 md:px-10">
           <span className="font-body text-xs font-semibold uppercase tracking-[0.2em] text-forest">
             Gallery
           </span>
@@ -117,30 +184,34 @@ export default function GalleryPage() {
       {/* ─── Section 2: Gallery grid ─── */}
       <section data-bg="light" className="bg-white pb-24 md:pb-30">
         <div className="mx-auto max-w-7xl px-5 md:px-10">
-          {/* Desktop: 12-column editorial grid */}
-          <div className="hidden md:grid grid-cols-12 gap-2">
-            {images.map((img) => (
-              <div
-                key={img.src}
-                className={`${img.colSpan} ${img.aspect} relative overflow-hidden rounded-sm`}
-              >
-                <Image
-                  src={img.src}
-                  alt={img.alt}
-                  fill
-                  className="object-cover transition-opacity duration-200 hover:opacity-95"
-                  sizes="(max-width: 1280px) 50vw, 640px"
-                />
+          {/* Desktop: flex rows with equal-height images */}
+          <div className="hidden md:flex flex-col gap-2">
+            {rows.map((row, ri) => (
+              <div key={ri} className={`flex gap-2 ${row.height}`}>
+                {row.images.map((img) => (
+                  <div
+                    key={img.src}
+                    className={`${img.widthClass} relative overflow-hidden rounded-sm`}
+                  >
+                    <Image
+                      src={img.src}
+                      alt={img.alt}
+                      fill
+                      className="object-cover transition-opacity duration-200 hover:opacity-95"
+                      sizes="(max-width: 1280px) 50vw, 640px"
+                    />
+                  </div>
+                ))}
               </div>
             ))}
           </div>
 
-          {/* Mobile: single column stack */}
+          {/* Mobile: single column with natural aspect ratios */}
           <div className="md:hidden flex flex-col gap-2">
-            {images.map((img) => (
+            {allImages.map((img) => (
               <div
                 key={img.src}
-                className={`${img.aspect} relative w-full overflow-hidden rounded-sm`}
+                className={`${img.mobileAspect} relative w-full overflow-hidden rounded-sm`}
               >
                 <Image
                   src={img.src}
@@ -156,8 +227,18 @@ export default function GalleryPage() {
       </section>
 
       {/* ─── Section 3: Final CTA ─── */}
-      <section data-bg="dark" className="bg-forest py-28 md:py-44">
-        <div className="mx-auto max-w-7xl px-5 md:px-10">
+      <section data-bg="dark" className="bg-forest py-28 md:py-44 relative overflow-hidden">
+        <div className="absolute right-[-25%] md:right-[-5%] top-1/2 -translate-y-1/2 h-[140%] aspect-square pointer-events-none opacity-[0.12]">
+          <Image
+            src="/assets/glasses-cream.png"
+            alt=""
+            fill
+            className="object-contain"
+            sizes="50vw"
+            aria-hidden="true"
+          />
+        </div>
+        <div className="relative z-10 mx-auto max-w-7xl px-5 md:px-10">
           <div className="lg:max-w-[880px]">
             <h2 className="font-display font-normal text-[64px] leading-[0.95] text-white lg:text-[clamp(88px,9vw,120px)]">
               Want your event on this page?

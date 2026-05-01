@@ -12,8 +12,8 @@ const services = [
   {
     num: "01",
     title: "Mobile Bartending",
-    image: "/assets/home-hero.jpg",
-    alt: "Sydni pouring a cocktail at the Clover bar.",
+    image: "/assets/services-mobile-bartending.jpg",
+    alt: "Sydni serving cocktails from behind the Clover mobile bar.",
     desc: "I come to you, bar and all, and serve your guests with warmth and pace. Every pour is precise, every interaction is friendly, and every drink looks like someone cared about it. Because someone did.",
     included: [
       "Certified and insured bartender",
@@ -25,8 +25,8 @@ const services = [
   {
     num: "02",
     title: "Full Bar Setup and Cleanup",
-    image: "/assets/cocktail-disco.webp",
-    alt: "The Clover bar fully set up and styled with florals and menus.",
+    image: "/assets/services-bar-setup.jpg",
+    alt: "The Clover mobile bar fully set up and styled before an event.",
     desc: "I arrive early to set the bar, style it, stock it, and stage everything for a smooth first pour. After the last drink, I break it all down and leave your space exactly the way I found it.",
     included: [
       "Arrival 60 to 90 minutes before service",
@@ -51,8 +51,8 @@ const services = [
   {
     num: "04",
     title: "Mocktails and Non-Alcoholic Options",
-    image: "/assets/cocktails-citrus-lavender.webp",
-    alt: "A styled mocktail with herbs and citrus at the Clover bar.",
+    image: "/assets/services-hero.jpg",
+    alt: "A styled spread of cocktails and mocktails on the Clover bar.",
     desc: "Every Clover menu includes real non-alcoholic options. Not just a soda water with lime. Proper mocktails, built with the same care as their alcoholic cousins, so every guest has something to raise.",
     included: [
       "At least two signature mocktails on every menu",
@@ -63,8 +63,8 @@ const services = [
   {
     num: "05",
     title: "Planning Call and Shopping List",
-    image: "/assets/sydni-serving-margarita.webp",
-    alt: "Sydni holding out a finished margarita toward the camera.",
+    image: "/assets/services-planning.jpg",
+    alt: "Planning materials and a curated shopping list for a Clover event.",
     desc: "We spend about an hour on the phone walking through your event, your guests, your preferences, and the vibe you're going for. After the call, I send a curated shopping list so you know exactly what alcohol to buy, how much, and where.",
     included: [
       "60-minute planning call",
@@ -76,8 +76,8 @@ const services = [
   {
     num: "06",
     title: "Premium Mixers, Garnishes, and Bar Tools",
-    image: "/assets/bar-prep-mixers-garnishes.webp",
-    alt: "Fresh mixers, hand-cut garnishes, and gold bar tools arranged on the Clover bar.",
+    image: "/assets/services-premium-mixers.jpg",
+    alt: "Fresh mixers, hand-cut garnishes, and bar tools arranged on the Clover bar.",
     desc: "Everything you need for the bar, minus the alcohol. Fresh-squeezed juice, premium mixers, hand-cut fruit, house-made syrups, all the tools and glassware, and enough ice to last the night.",
     included: [
       "Fresh juices and premium mixers",
@@ -153,7 +153,7 @@ export default function ServicesPage() {
   return (
     <>
       {/* ─── Section 1: Page hero ─── */}
-      <section data-bg="light" className="bg-white pt-14 md:pt-18 pb-24 md:pb-30">
+      <section data-bg="light" className="bg-white pt-14 md:pt-18 pb-16 md:pb-30">
         <div className="mx-auto max-w-7xl px-5 md:px-10 flex flex-col md:flex-row md:items-center gap-12 md:gap-16">
           <div className="md:w-[55%]">
             <span className="font-body text-xs font-semibold uppercase tracking-[0.2em] text-forest">
@@ -167,11 +167,11 @@ export default function ServicesPage() {
               exactly what you get when you book Clover for your event.
             </p>
           </div>
-          <div className="md:w-[40%]">
-            <div className="relative aspect-[4/5] md:aspect-[4/3] w-full overflow-hidden rounded-sm">
+          <div className="hidden md:block md:w-[40%]">
+            <div className="relative md:aspect-[4/3] w-full overflow-hidden rounded-sm">
               <Image
-                src="/assets/sydni-prep.webp"
-                alt="Sydni arranging garnishes on the Clover bar before an event."
+                src="/assets/services-hero.jpg"
+                alt="A styled spread of cocktails and bar details on the Clover mobile bar."
                 fill
                 className="object-cover"
                 sizes="(max-width: 768px) 100vw, 40vw"
@@ -184,58 +184,72 @@ export default function ServicesPage() {
 
       {/* ─── Section 2: What you bring / What I bring ─── */}
       <section data-bg="light" className="bg-white pb-24 md:pb-30">
-        <div className="mx-auto max-w-7xl px-5 md:px-10">
-          {/* Section header */}
-          <span className="font-body text-xs font-semibold uppercase tracking-[0.2em] text-forest">
-            The division of labor
-          </span>
-          <h2 className="mt-4 font-display font-normal text-[30px] leading-[1.1] text-ink md:text-[44px]">
-            You bring the bottles. I bring the bar.
-          </h2>
-          <p className="mt-6 max-w-[600px] font-body text-[17px] leading-[1.6] text-ink/85">
-            Clover is a full-service mobile bar, with one exception. You handle
-            the alcohol, so you stay in control of what gets poured. I handle
-            everything else. During our planning call, I send a curated shopping
-            list so you buy the right amount of the right things.
-          </p>
-
-          {/* Comparison columns */}
-          <div className="mt-16 md:mt-20 flex flex-col md:flex-row gap-12 md:gap-20">
-            {/* You bring */}
-            <div className="md:w-1/2">
-              <span className="font-body text-[11px] font-medium uppercase tracking-[0.2em] text-clover">
-                You bring
-              </span>
-              <div className="mt-6 flex flex-col gap-8">
-                {youBring.map((item) => (
-                  <div key={item.title}>
-                    <h3 className="font-display font-medium text-xl text-ink">
-                      {item.title}
-                    </h3>
-                    <p className="mt-1.5 font-body text-sm text-ink/70">
-                      {item.desc}
-                    </p>
-                  </div>
-                ))}
-              </div>
+        <div className="mx-auto max-w-7xl px-5 md:px-10 flex flex-col md:flex-row md:items-center gap-12 md:gap-20">
+          {/* Image column */}
+          <div className="md:w-1/2">
+            <div className="relative aspect-[4/5] w-full overflow-hidden rounded-sm">
+              <Image
+                src="/assets/services-you-bring-bottles.jpg"
+                alt="Bottles and bar supplies arranged on the Clover mobile bar."
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 50vw"
+              />
             </div>
+          </div>
 
-            {/* I bring */}
-            <div className="md:w-1/2">
-              <span className="font-body text-[11px] font-medium uppercase tracking-[0.2em] text-clover">
-                I bring
-              </span>
-              <div className="mt-6 flex flex-col gap-8">
-                {iBring.map((item) => (
-                  <div key={item.title}>
-                    <h3 className="font-display font-medium text-xl text-ink">
-                      {item.title}
-                    </h3>
-                    <p className="mt-1.5 font-body text-sm text-ink/70">
-                      {item.desc}
-                    </p>
-                  </div>
-                ))}
+          {/* Copy column */}
+          <div className="md:w-1/2">
+            <span className="font-body text-xs font-semibold uppercase tracking-[0.2em] text-forest">
+              The division of labor
+            </span>
+            <h2 className="mt-4 font-display font-normal text-[30px] leading-[1.1] text-ink md:text-[44px]">
+              You bring the bottles. I bring the bar.
+            </h2>
+            <p className="mt-6 font-body text-[17px] leading-[1.6] text-ink/85">
+              Clover is a full-service mobile bar, with one exception. You handle
+              the alcohol, so you stay in control of what gets poured. I handle
+              everything else. During our planning call, I send a curated shopping
+              list so you buy the right amount of the right things.
+            </p>
+
+            <div className="mt-10 flex flex-col sm:flex-row gap-10 sm:gap-16">
+              {/* You bring */}
+              <div>
+                <span className="font-body text-[11px] font-medium uppercase tracking-[0.2em] text-clover">
+                  You bring
+                </span>
+                <div className="mt-4 flex flex-col gap-5">
+                  {youBring.map((item) => (
+                    <div key={item.title}>
+                      <h3 className="font-display font-medium text-lg text-ink">
+                        {item.title}
+                      </h3>
+                      <p className="mt-1 font-body text-sm text-ink/70">
+                        {item.desc}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* I bring */}
+              <div>
+                <span className="font-body text-[11px] font-medium uppercase tracking-[0.2em] text-clover">
+                  I bring
+                </span>
+                <div className="mt-4 flex flex-col gap-5">
+                  {iBring.map((item) => (
+                    <div key={item.title}>
+                      <h3 className="font-display font-medium text-lg text-ink">
+                        {item.title}
+                      </h3>
+                      <p className="mt-1 font-body text-sm text-ink/70">
+                        {item.desc}
+                      </p>
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
@@ -287,10 +301,10 @@ export default function ServicesPage() {
                   <span className="font-display font-medium text-sm text-clover">
                     {s.num}
                   </span>
-                  <h3 className="mt-2 font-display font-medium text-[26px] leading-[1.2] text-ink md:text-[32px]">
+                  <h3 className="mt-2 font-display font-medium text-2xl leading-[1.2] text-ink">
                     {s.title}
                   </h3>
-                  <p className="mt-4 font-body text-base leading-[1.6] text-ink/75">
+                  <p className="mt-4 font-body text-[15px] leading-[1.6] text-ink/75">
                     {s.desc}
                   </p>
                   {s.included && (
@@ -346,11 +360,21 @@ export default function ServicesPage() {
       </section>
 
       {/* ─── Section 5: Final CTA ─── */}
-      <section data-bg="forest" className="bg-forest py-28 md:py-44">
-        <div className="mx-auto max-w-7xl px-5 md:px-10">
+      <section data-bg="forest" className="bg-forest py-28 md:py-44 relative overflow-hidden">
+        <div className="absolute right-[-25%] md:right-[-5%] top-1/2 -translate-y-1/2 h-[140%] aspect-square pointer-events-none opacity-[0.12]">
+          <Image
+            src="/assets/horseshoe-cream.png"
+            alt=""
+            fill
+            className="object-contain"
+            sizes="50vw"
+            aria-hidden="true"
+          />
+        </div>
+        <div className="relative z-10 mx-auto max-w-7xl px-5 md:px-10">
           <div className="lg:max-w-[880px]">
             <h2 className="font-display font-normal text-[64px] leading-[0.95] text-white lg:text-[clamp(88px,9vw,120px)]">
-              Ready to build your bar.
+              Ready to build your bar?
             </h2>
             <div className="mt-10 lg:mt-14">
               <Button variant="inverted" href="/contact">Inquire</Button>

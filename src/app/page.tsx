@@ -102,8 +102,8 @@ export default function Home() {
       >
         <div className="absolute inset-0">
           <Image
-            src="/assets/home-hero.jpg"
-            alt="Sydni behind the Clover mobile bar, styled with fresh florals and premium spirits."
+            src="/assets/home-hero-new.jpg"
+            alt="Sydni standing behind the Clover mobile bar at an event."
             fill
             className="object-cover object-bottom"
             sizes="100vw"
@@ -114,13 +114,13 @@ export default function Home() {
           className="absolute inset-0"
           style={{
             background:
-              "linear-gradient(to bottom, white 0%, white 30%, transparent 75%)",
+              "linear-gradient(to bottom, #FDF7EE 0%, #FDF7EE 30%, transparent 75%)",
           }}
         />
         <div
           className="relative z-10 flex flex-col h-full px-5"
           style={{
-            paddingTop: "12vh",
+            paddingTop: "10vh",
             paddingBottom: "calc(80px + env(safe-area-inset-bottom, 0px))",
           }}
         >
@@ -128,7 +128,7 @@ export default function Home() {
             Mobile Bartending, New Hampshire
           </span>
           <h1 className="mt-5 font-display font-normal text-[40px] leading-[1.05] text-ink">
-            Curated cocktails. Lucky pours. Moments worth toasting.
+            A little luck in every pour.
           </h1>
           <p className="mt-6 max-w-[480px] font-body text-lg text-ink/80">
             A thoughtfully stocked bar, brought to your celebration. I&rsquo;m
@@ -141,37 +141,47 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Desktop hero: split layout */}
-      <section className="hidden md:block bg-white pt-20 pb-30">
-        <div className="mx-auto max-w-7xl px-10 flex flex-row items-center gap-16">
-          <div className="w-[60%]">
-            <span className="font-body text-xs font-semibold uppercase tracking-[0.2em] text-forest">
-              Mobile Bartending, New Hampshire
-            </span>
-            <h1 className="mt-5 font-display font-normal text-[68px] leading-[1.05] text-ink">
-              Curated cocktails. Lucky pours. Moments worth toasting.
-            </h1>
-            <p className="mt-6 max-w-[480px] font-body text-lg text-ink/80">
-              A thoughtfully stocked bar, brought to your celebration. I&rsquo;m
-              Sydni, and I pour drinks for weddings, private parties, and
-              gatherings worth remembering across New England.
-            </p>
-            <div className="mt-8">
-              <Button href="/contact">Inquire</Button>
-            </div>
+      {/* Desktop hero: split layout, image bleeds to right edge and behind nav */}
+      <section
+        className="hidden md:flex bg-white items-center relative"
+        style={{ height: "100dvh", marginTop: "calc(-1 * var(--header-h))" }}
+      >
+        {/* Copy column: constrained to max-w container with left padding */}
+        <div className="w-[50%] shrink-0 pl-[max(2.5rem,calc((100vw-80rem)/2+2.5rem))]" style={{ paddingTop: "var(--header-h)" }}>
+          <span className="font-body text-xs font-semibold uppercase tracking-[0.2em] text-forest">
+            Mobile Bartending, New Hampshire
+          </span>
+          <h1 className="mt-5 font-display font-normal text-[68px] leading-[1.05] text-ink">
+            A little luck in every pour.
+          </h1>
+          <p className="mt-6 max-w-[480px] font-body text-lg text-ink/80">
+            At Clover Bar Co, we bring more than just drinks, we bring an
+            elevated experience. From curated cocktails to seamless service,
+            we handle every detail so you can stay present and enjoy your
+            event.
+          </p>
+          <div className="mt-8">
+            <Button href="/contact">Inquire</Button>
           </div>
-          <div className="w-[40%]">
-            <div className="relative aspect-[3/4] w-full overflow-hidden rounded-sm">
-              <Image
-                src="/assets/drink-arrangement.png"
-                alt="Sydni behind the Clover mobile bar, styled with fresh florals and premium spirits."
-                fill
-                className="object-cover"
-                sizes="40vw"
-                priority
-              />
-            </div>
-          </div>
+        </div>
+        {/* Image column: bleeds to right edge, full viewport height */}
+        <div className="w-[50%] absolute right-0 top-0 bottom-0">
+          <Image
+            src="/assets/home-hero-new.jpg"
+            alt="Sydni standing behind the Clover mobile bar at an event."
+            fill
+            className="object-cover"
+            sizes="50vw"
+            priority
+          />
+          {/* Gradient overlay for nav readability */}
+          <div
+            className="absolute inset-x-0 top-0 h-20 pointer-events-none"
+            style={{
+              background:
+                "linear-gradient(to bottom, rgba(253,247,238,0.85) 0%, rgba(253,247,238,0.4) 50%, transparent 100%)",
+            }}
+          />
         </div>
       </section>
 
@@ -255,8 +265,8 @@ export default function Home() {
             </div>
             <div className="mt-12 relative aspect-[4/3] md:aspect-auto md:flex-1 w-full overflow-hidden rounded-sm">
               <Image
-                src="/assets/cocktails-citrus-lavender.webp"
-                alt="A styled pour behind the Clover bar, florals and garnishes in soft focus."
+                src="/assets/services-you-bring-bottles.jpg"
+                alt="The Clover mobile bar styled with florals, menus, and cocktail glassware."
                 fill
                 className="object-cover"
                 sizes="(max-width: 768px) 100vw, 50vw"
@@ -381,16 +391,27 @@ export default function Home() {
       </section>
 
       {/* ─── Section 6: Final CTA ─── */}
-      <section data-bg="dark" className="bg-forest py-28 md:py-44">
-        <div className="mx-auto max-w-7xl px-5 md:px-10">
+      <section data-bg="dark" className="bg-forest py-28 md:py-44 relative overflow-hidden">
+        {/* Glasses decal */}
+        <div className="absolute right-[-25%] md:right-[-5%] top-1/2 -translate-y-1/2 h-[140%] aspect-square pointer-events-none opacity-[0.12]">
+          <Image
+            src="/assets/glasses-cream.png"
+            alt=""
+            fill
+            className="object-contain"
+            sizes="50vw"
+            aria-hidden="true"
+          />
+        </div>
+        <div className="relative z-10 mx-auto max-w-7xl px-5 md:px-10">
           <div className="lg:max-w-[880px]">
             <h2
               className="font-display font-normal text-[64px] leading-[0.95] text-white lg:text-[clamp(88px,9vw,120px)]"
             >
-              Let&rsquo;s plan your bar.
+              Let&rsquo;s elevate your event.
             </h2>
             <div className="mt-10 lg:mt-14">
-              <Button variant="inverted" href="/contact">Inquire</Button>
+              <Button variant="inverted" href="/contact">Book Your Date</Button>
             </div>
           </div>
         </div>

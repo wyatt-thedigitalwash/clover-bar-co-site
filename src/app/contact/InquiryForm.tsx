@@ -65,7 +65,7 @@ function validate(data: FormData): FormErrors {
 }
 
 const labelClass =
-  "block font-body text-[11px] font-medium uppercase tracking-[0.2em] text-clover mb-2";
+  "block font-body text-[11px] font-medium uppercase tracking-[0.2em] text-forest mb-2";
 
 const inputClass =
   "w-full font-body text-base text-ink bg-white border border-[#E8E5DF] rounded-[2px] py-3 px-4 placeholder:text-ink/40 focus:border-forest focus:outline-none transition-colors duration-150";
@@ -360,10 +360,10 @@ export default function InquiryForm() {
         <button
           type="submit"
           disabled={submitting}
-          className={`inline-flex items-center gap-2 font-body text-[15px] font-medium tracking-wide rounded-sm transition-colors duration-150 bg-forest text-white px-7 py-3.5 w-full md:w-auto justify-center md:justify-start ${
+          className={`inline-flex items-center gap-2 font-body text-[15px] font-medium tracking-wide rounded-sm transition-colors duration-150 bg-light-green text-white px-7 py-3.5 w-full md:w-auto justify-center md:justify-start ${
             submitting
-              ? "bg-forest/50 cursor-not-allowed"
-              : "hover:bg-clover"
+              ? "bg-light-green/50 cursor-not-allowed"
+              : "hover:bg-forest"
           }`}
         >
           {submitting ? "Sending..." : "Send inquiry"}

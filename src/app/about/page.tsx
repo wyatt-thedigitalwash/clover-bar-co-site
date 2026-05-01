@@ -19,7 +19,7 @@ const beliefs = [
     num: "02",
     statement: "The small things are the whole thing.",
     supporting:
-      "The ice, the garnish, the glassware, the first drink someone orders when they walk up. The small things are what make the night feel considered.",
+      "The ice, the garnish, the glassware, the first drink someone orders when they walk up. Those are the details that make a night feel considered.",
   },
   {
     num: "03",
@@ -63,7 +63,7 @@ export default function AboutPage() {
               Meet Sydni
             </span>
             <h1 className="mt-5 font-display font-normal text-[40px] leading-[1.05] text-ink md:text-[56px]">
-              Seven years behind the bar. One reason I started Clover.
+              From behind the bar to building one.
             </h1>
 
             {/* Mobile portrait (interleaved between headline and body) */}
@@ -82,13 +82,13 @@ export default function AboutPage() {
 
             <div className="mt-8 lg:mt-6 max-w-[480px] space-y-5">
               <p className="font-body text-[17px] leading-[1.6] text-ink/85">
-                I&rsquo;m Sydni, and I&rsquo;ve been pouring drinks for a long
-                time. Weddings, rooftop parties, dive bars, private dinners, all
-                of it. Somewhere along the way I realized the moments people
-                remember aren&rsquo;t the fancy ones. They&rsquo;re the ones
-                where everything just worked, where the bar was stocked, the
-                bartender was warm, and the host got to actually be a guest at
-                their own event.
+                I&rsquo;m Sydni. I&rsquo;ve spent the better part of a decade
+                behind the bar. Weddings, rooftop parties, dive bars, private
+                dinners, all of it. Somewhere along the way, I noticed that the
+                moments worth remembering are never the fanciest. They&rsquo;re
+                the ones where everything just worked. The bar was stocked, the
+                bartender was warm, and the host finally got to be a guest at
+                their own party.
               </p>
               <p className="font-body text-[17px] leading-[1.6] text-ink/85">
                 That&rsquo;s why I started Clover. I wanted to build the kind of
@@ -98,9 +98,9 @@ export default function AboutPage() {
                 through.
               </p>
               <p className="font-body text-[17px] leading-[1.6] text-ink/85">
-                Every event I take is personal. I plan the menu with you. I
+                Every event I take on is personal. I plan the menu with you. I
                 handle the setup and the breakdown. I pour every drink myself.
-                And I bring a little luck to every pour.
+                And I bring a little luck to every single one.
               </p>
             </div>
           </div>
@@ -178,11 +178,21 @@ export default function AboutPage() {
       </section>
 
       {/* ─── Section 5: Final CTA ─── */}
-      <section data-bg="dark" className="bg-forest py-28 md:py-44">
-        <div className="mx-auto max-w-7xl px-5 md:px-10">
+      <section data-bg="dark" className="bg-forest py-28 md:py-44 relative overflow-hidden">
+        <div className="absolute right-[-25%] md:right-[-5%] top-1/2 -translate-y-1/2 h-[140%] aspect-square pointer-events-none opacity-[0.12]">
+          <Image
+            src="/assets/glasses-with-bow-cream.png"
+            alt=""
+            fill
+            className="object-contain"
+            sizes="50vw"
+            aria-hidden="true"
+          />
+        </div>
+        <div className="relative z-10 mx-auto max-w-7xl px-5 md:px-10">
           <div className="lg:max-w-[880px]">
             <h2 className="font-display font-normal text-[64px] leading-[0.95] text-white lg:text-[clamp(88px,9vw,120px)]">
-              Let&rsquo;s plan something good.
+              Let&rsquo;s plan your lucky day.
             </h2>
             <div className="mt-10 lg:mt-14">
               <Button variant="inverted" href="/contact">Inquire</Button>

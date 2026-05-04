@@ -1,11 +1,29 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Button from "@/components/Button";
+import { BreadcrumbSchema, ServiceSchema } from "@/components/JsonLd";
 
 export const metadata: Metadata = {
-  title: "Services | Clover Mobile Bar Co.",
+  title: "Services | Clover Mobile Bar Co., New Hampshire",
   description:
-    "Mobile bartending services for weddings, private parties, and corporate events across New England. Certified bartenders, custom cocktails, and full setup.",
+    "Mobile bartending services for weddings, private parties, and corporate events across New England. Custom cocktails, full bar setup, and cleanup.",
+  alternates: { canonical: "https://cloverbarco.com/services" },
+  openGraph: {
+    title: "Services | Clover Mobile Bar Co., New Hampshire",
+    description:
+      "Mobile bartending services for weddings, private parties, and corporate events across New England. Custom cocktails, full bar setup, and cleanup.",
+    url: "https://cloverbarco.com/services",
+    siteName: "Clover Mobile Bar Co.",
+    type: "website",
+    images: [{ url: "/og-image.png", width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Services | Clover Mobile Bar Co., New Hampshire",
+    description:
+      "Mobile bartending services for weddings, private parties, and corporate events across New England. Custom cocktails, full bar setup, and cleanup.",
+    images: ["/og-image.png"],
+  },
 };
 
 const services = [
@@ -152,6 +170,11 @@ const iBring = [
 export default function ServicesPage() {
   return (
     <>
+      <BreadcrumbSchema pageName="Services" pageUrl="/services" />
+      <ServiceSchema
+        name="Mobile Bartending"
+        description="Full-service mobile bartending for weddings, private parties, and corporate events across New England. Custom cocktails, bar setup, mixers, garnishes, and cleanup included."
+      />
       {/* ─── Section 1: Page hero ─── */}
       <section data-bg="light" className="bg-white pt-14 md:pt-18 pb-16 md:pb-30">
         <div className="mx-auto max-w-7xl px-5 md:px-10 flex flex-col md:flex-row md:items-center gap-12 md:gap-16">

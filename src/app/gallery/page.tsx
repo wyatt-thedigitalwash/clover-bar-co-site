@@ -1,11 +1,29 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Button from "@/components/Button";
+import { BreadcrumbSchema } from "@/components/JsonLd";
 
 export const metadata: Metadata = {
-  title: "Gallery | Clover Mobile Bar Co.",
+  title: "Gallery | Clover Mobile Bar Co., New Hampshire",
   description:
-    "A look at the bar, the drinks, and the details. Clover Mobile Bar Co., mobile bartending across New England.",
+    "Photos of the bar, the drinks, and the details. See what Clover Mobile Bar Co. brings to weddings and events across New England.",
+  alternates: { canonical: "https://cloverbarco.com/gallery" },
+  openGraph: {
+    title: "Gallery | Clover Mobile Bar Co., New Hampshire",
+    description:
+      "Photos of the bar, the drinks, and the details. See what Clover Mobile Bar Co. brings to weddings and events across New England.",
+    url: "https://cloverbarco.com/gallery",
+    siteName: "Clover Mobile Bar Co.",
+    type: "website",
+    images: [{ url: "/og-image.png", width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Gallery | Clover Mobile Bar Co., New Hampshire",
+    description:
+      "Photos of the bar, the drinks, and the details. See what Clover Mobile Bar Co. brings to weddings and events across New England.",
+    images: ["/og-image.png"],
+  },
 };
 
 type GalleryImage = {
@@ -165,6 +183,7 @@ const allImages = rows.flatMap((r) => r.images);
 export default function GalleryPage() {
   return (
     <>
+      <BreadcrumbSchema pageName="Gallery" pageUrl="/gallery" />
       {/* ─── Section 1: Page hero ─── */}
       <section data-bg="light" className="bg-white pt-14 md:pt-18 pb-16 md:pb-20">
         <div className="mx-auto max-w-7xl px-5 md:px-10">

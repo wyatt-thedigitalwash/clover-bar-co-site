@@ -1,5 +1,30 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Button from "@/components/Button";
+import { BreadcrumbSchema } from "@/components/JsonLd";
+
+export const metadata: Metadata = {
+  title: "Clover Mobile Bar Co. | Mobile Bartending, New Hampshire",
+  description:
+    "Mobile bartending for weddings, private parties, and events across New England. Curated cocktails, custom menus, and full bar service by Clover Mobile Bar Co.",
+  alternates: { canonical: "https://cloverbarco.com" },
+  openGraph: {
+    title: "Clover Mobile Bar Co. | Mobile Bartending, New Hampshire",
+    description:
+      "Mobile bartending for weddings, private parties, and events across New England. Curated cocktails, custom menus, and full bar service.",
+    url: "https://cloverbarco.com",
+    siteName: "Clover Mobile Bar Co.",
+    type: "website",
+    images: [{ url: "/og-image.png", width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Clover Mobile Bar Co. | Mobile Bartending, New Hampshire",
+    description:
+      "Mobile bartending for weddings, private parties, and events across New England. Curated cocktails, custom menus, and full bar service.",
+    images: ["/og-image.png"],
+  },
+};
 const movements = [
   {
     src: "/assets/rimming-glass-salt-station.webp",
@@ -93,6 +118,7 @@ const steps = [
 export default function Home() {
   return (
     <>
+      <BreadcrumbSchema pageName="Home" pageUrl="/" />
       {/* ─── Section 1: Hero ─── */}
 
       {/* Mobile hero: background image behind copy */}
@@ -151,9 +177,9 @@ export default function Home() {
           <span className="font-body text-xs font-semibold uppercase tracking-[0.2em] text-forest">
             Mobile Bartending, New Hampshire
           </span>
-          <h1 className="mt-5 font-display font-normal text-[68px] leading-[1.05] text-ink">
+          <p role="heading" aria-level={1} className="mt-5 font-display font-normal text-[68px] leading-[1.05] text-ink">
             A little luck in every pour.
-          </h1>
+          </p>
           <p className="mt-6 max-w-[480px] font-body text-lg text-ink/80">
             At Clover Bar Co, we bring more than just drinks, we bring an
             elevated experience. From curated cocktails to seamless service,

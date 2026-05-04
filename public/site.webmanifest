@@ -1,0 +1,19 @@
+{
+  "name": "Clover Mobile Bar Co.",
+  "short_name": "Clover Bar",
+  "theme_color": "#203F0B",
+  "background_color": "#FDF7EE",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

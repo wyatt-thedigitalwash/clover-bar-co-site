@@ -1,11 +1,29 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Button from "@/components/Button";
+import { BreadcrumbSchema } from "@/components/JsonLd";
 
 export const metadata: Metadata = {
-  title: "About Sydni | Clover Mobile Bar Co.",
+  title: "About Sydni | Clover Mobile Bar Co., New Hampshire",
   description:
     "Meet Sydni, the owner and bartender behind Clover Mobile Bar Co. Seven years of bartending experience poured into every event across New England.",
+  alternates: { canonical: "https://cloverbarco.com/about" },
+  openGraph: {
+    title: "About Sydni | Clover Mobile Bar Co., New Hampshire",
+    description:
+      "Meet Sydni, the owner and bartender behind Clover Mobile Bar Co. Seven years of bartending experience across New England.",
+    url: "https://cloverbarco.com/about",
+    siteName: "Clover Mobile Bar Co.",
+    type: "website",
+    images: [{ url: "/og-image.png", width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "About Sydni | Clover Mobile Bar Co., New Hampshire",
+    description:
+      "Meet Sydni, the owner and bartender behind Clover Mobile Bar Co. Seven years of bartending experience across New England.",
+    images: ["/og-image.png"],
+  },
 };
 
 const beliefs = [
@@ -40,6 +58,7 @@ const stats = [
 export default function AboutPage() {
   return (
     <>
+      <BreadcrumbSchema pageName="About" pageUrl="/about" />
       {/* ─── Section 1: Page hero / Meet Sydni ─── */}
       <section data-bg="light" className="bg-white pt-14 md:pt-18 pb-24 md:pb-30">
         <div className="mx-auto max-w-7xl px-5 md:px-10 flex flex-col lg:flex-row lg:items-center gap-12 lg:gap-16">

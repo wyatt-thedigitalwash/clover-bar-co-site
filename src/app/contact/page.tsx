@@ -1,15 +1,34 @@
 import type { Metadata } from "next";
 import InquiryForm from "./InquiryForm";
+import { BreadcrumbSchema } from "@/components/JsonLd";
 
 export const metadata: Metadata = {
-  title: "Inquire | Clover Mobile Bar Co.",
+  title: "Inquire | Clover Mobile Bar Co., New Hampshire",
   description:
-    "Tell me about your event and I'll send a personalized quote within 24 to 48 hours. Clover Mobile Bar Co., mobile bartending across New England.",
+    "Tell us about your event and get a personalized quote within 24 to 48 hours. Clover Mobile Bar Co., mobile bartending across New England.",
+  alternates: { canonical: "https://cloverbarco.com/contact" },
+  openGraph: {
+    title: "Inquire | Clover Mobile Bar Co., New Hampshire",
+    description:
+      "Tell us about your event and get a personalized quote within 24 to 48 hours. Clover Mobile Bar Co., mobile bartending across New England.",
+    url: "https://cloverbarco.com/contact",
+    siteName: "Clover Mobile Bar Co.",
+    type: "website",
+    images: [{ url: "/og-image.png", width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Inquire | Clover Mobile Bar Co., New Hampshire",
+    description:
+      "Tell us about your event and get a personalized quote within 24 to 48 hours. Clover Mobile Bar Co., mobile bartending across New England.",
+    images: ["/og-image.png"],
+  },
 };
 
 export default function ContactPage() {
   return (
     <>
+      <BreadcrumbSchema pageName="Contact" pageUrl="/contact" />
       {/* ─── Section 1: Page hero ─── */}
       <section data-bg="light" className="bg-white pt-14 md:pt-18 pb-12 md:pb-16">
         <div className="mx-auto max-w-7xl px-5 md:px-10">

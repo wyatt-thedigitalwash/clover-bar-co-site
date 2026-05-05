@@ -109,24 +109,48 @@ const services = [
 
 const menuExamples = [
   {
-    src: "/Website-Bar-Menus/clover-bar-menu.png",
-    alt: "Clover signature cocktail menu featuring jalapeno pineapple margarita, aperol spritz, and old fashioned.",
-    caption: "Signature cocktails",
+    src: "/Website-Bar-Menus/marine-bar-menu.png",
+    alt: "Marine-themed bar menu with coastal cocktails and nautical design.",
+  },
+  {
+    src: "/Website-Bar-Menus/floral-bar-menu.png",
+    alt: "Floral-themed bar menu with botanical cocktails and flower illustrations.",
   },
   {
     src: "/Website-Bar-Menus/drunk-in-love-menu.png",
     alt: "Drunk in Love wedding bar menu with his and hers signature drinks, wine, beer, and mocktails.",
-    caption: "Wedding bar",
   },
   {
     src: "/Website-Bar-Menus/bar-menu.png",
     alt: "Botanical bar menu with beer, wine, spirits, and custom cocktails illustrated with poppies.",
-    caption: "Botanical bar",
   },
   {
     src: "/Website-Bar-Menus/mocktail-menu.png",
     alt: "Watercolor mocktail menu featuring flow state fizz, lotus lemonade, serenity spritz, and zen temple.",
-    caption: "Mocktail menu",
+  },
+  {
+    src: "/Website-Bar-Menus/picnic-bar-menu.png",
+    alt: "Picnic-themed bar menu with refreshing summer cocktails.",
+  },
+  {
+    src: "/Website-Bar-Menus/beachy-bar-menu.png",
+    alt: "Beach-themed bar menu with tropical cocktails and sandy tones.",
+  },
+  {
+    src: "/Website-Bar-Menus/elegant-the-bar-menu.png",
+    alt: "Elegant bar menu with refined cocktails and sophisticated styling.",
+  },
+  {
+    src: "/Website-Bar-Menus/his-hers-menu.png",
+    alt: "His and hers signature cocktail menu for a wedding celebration.",
+  },
+  {
+    src: "/Website-Bar-Menus/mocktail-bar-menu.png",
+    alt: "Dedicated mocktail bar menu with creative non-alcoholic drinks.",
+  },
+  {
+    src: "/Website-Bar-Menus/clover-bar-menu.png",
+    alt: "Clover signature cocktail menu featuring jalapeno pineapple margarita, aperol spritz, and old fashioned.",
   },
 ];
 
@@ -379,45 +403,37 @@ export default function ServicesPage() {
             A few menus I&rsquo;ve designed.
           </h3>
 
-          {/* Desktop: equal-width row */}
-          <div className="hidden md:grid grid-cols-4 gap-6 mt-12 md:mt-16">
+          {/* Desktop: grid */}
+          <div className="hidden md:grid grid-cols-3 lg:grid-cols-4 gap-6 mt-12 md:mt-16">
             {menuExamples.map((m) => (
-              <div key={m.src}>
-                <div className="relative aspect-[3/4] w-full overflow-hidden rounded-sm">
-                  <Image
-                    src={m.src}
-                    alt={m.alt}
-                    fill
-                    className="object-contain bg-white"
-                    sizes="25vw"
-                  />
-                </div>
-                <p className="mt-3 font-body text-[13px] text-ink/50">
-                  {m.caption}
-                </p>
+              <div key={m.src} className="relative aspect-[3/4] w-full overflow-hidden rounded-sm shadow-md">
+                <Image
+                  src={m.src}
+                  alt={m.alt}
+                  fill
+                  className="object-contain bg-white"
+                  sizes="(max-width: 1024px) 33vw, 25vw"
+                />
               </div>
             ))}
           </div>
 
           {/* Mobile: horizontal scroll with snap */}
-          <div className="md:hidden mt-12 -mx-5 px-5 flex gap-4 overflow-x-auto snap-x snap-mandatory scrollbar-none">
+          <div className="md:hidden mt-12 -mx-5 px-5 pb-4 flex gap-5 overflow-x-auto snap-x snap-mandatory scrollbar-none">
             {menuExamples.map((m) => (
               <div
                 key={m.src}
-                className="w-[75vw] shrink-0 snap-start"
+                className="w-[70vw] shrink-0 snap-center"
               >
-                <div className="relative aspect-[3/4] w-full overflow-hidden rounded-sm">
+                <div className="relative aspect-[3/4] w-full overflow-hidden rounded-sm shadow-md">
                   <Image
                     src={m.src}
                     alt={m.alt}
                     fill
                     className="object-contain bg-white"
-                    sizes="75vw"
+                    sizes="70vw"
                   />
                 </div>
-                <p className="mt-3 font-body text-[13px] text-ink/50">
-                  {m.caption}
-                </p>
               </div>
             ))}
           </div>

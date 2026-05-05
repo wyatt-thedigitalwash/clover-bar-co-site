@@ -107,6 +107,29 @@ const services = [
   },
 ];
 
+const menuExamples = [
+  {
+    src: "/Website-Bar-Menus/clover-bar-menu.png",
+    alt: "Clover signature cocktail menu featuring jalapeno pineapple margarita, aperol spritz, and old fashioned.",
+    caption: "Signature cocktails",
+  },
+  {
+    src: "/Website-Bar-Menus/drunk-in-love-menu.png",
+    alt: "Drunk in Love wedding bar menu with his and hers signature drinks, wine, beer, and mocktails.",
+    caption: "Wedding bar",
+  },
+  {
+    src: "/Website-Bar-Menus/bar-menu.png",
+    alt: "Botanical bar menu with beer, wine, spirits, and custom cocktails illustrated with poppies.",
+    caption: "Botanical bar",
+  },
+  {
+    src: "/Website-Bar-Menus/mocktail-menu.png",
+    alt: "Watercolor mocktail menu featuring flow state fizz, lotus lemonade, serenity spritz, and zen temple.",
+    caption: "Mocktail menu",
+  },
+];
+
 const eventTypes = [
   {
     num: "01",
@@ -290,15 +313,15 @@ export default function ServicesPage() {
           </h2>
         </div>
 
+        {/* Services 01-03 */}
         <div className="mt-16 md:mt-20 flex flex-col gap-20 md:gap-30">
-          {services.map((s, i) => {
+          {services.slice(0, 3).map((s, i) => {
             const imageLeft = i % 2 === 0;
             return (
               <div
                 key={s.num}
                 className="mx-auto max-w-7xl px-5 md:px-10 flex flex-col md:flex-row md:items-center gap-12 md:gap-20"
               >
-                {/* Image column */}
                 <div
                   className={`md:w-1/2 ${
                     imageLeft ? "md:order-1" : "md:order-2"
@@ -314,8 +337,117 @@ export default function ServicesPage() {
                     />
                   </div>
                 </div>
+                <div
+                  className={`md:w-1/2 ${
+                    imageLeft ? "md:order-2" : "md:order-1"
+                  }`}
+                >
+                  <span className="font-display font-medium text-sm text-clover">
+                    {s.num}
+                  </span>
+                  <h3 className="mt-2 font-display font-medium text-2xl leading-[1.2] text-ink">
+                    {s.title}
+                  </h3>
+                  <p className="mt-4 font-body text-[15px] leading-[1.6] text-ink/75">
+                    {s.desc}
+                  </p>
+                  {s.included && (
+                    <ul className="mt-5 flex flex-col gap-2">
+                      {s.included.map((item) => (
+                        <li
+                          key={item}
+                          className="font-body text-sm text-ink/70"
+                        >
+                          <span className="text-clover mr-2">·</span>
+                          {item}
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+                </div>
+              </div>
+            );
+          })}
+        </div>
 
-                {/* Copy column */}
+        {/* ─── Menu examples showcase ─── */}
+        <div className="mx-auto max-w-7xl px-5 md:px-10 py-20 md:py-24">
+          <span className="font-body text-xs font-semibold uppercase tracking-[0.2em] text-forest">
+            From past events
+          </span>
+          <h3 className="mt-4 font-display font-normal text-[30px] leading-[1.1] text-ink md:text-[44px]">
+            A few menus I&rsquo;ve designed.
+          </h3>
+
+          {/* Desktop: equal-width row */}
+          <div className="hidden md:grid grid-cols-4 gap-6 mt-12 md:mt-16">
+            {menuExamples.map((m) => (
+              <div key={m.src}>
+                <div className="relative aspect-[3/4] w-full overflow-hidden rounded-sm">
+                  <Image
+                    src={m.src}
+                    alt={m.alt}
+                    fill
+                    className="object-contain bg-white"
+                    sizes="25vw"
+                  />
+                </div>
+                <p className="mt-3 font-body text-[13px] text-ink/50">
+                  {m.caption}
+                </p>
+              </div>
+            ))}
+          </div>
+
+          {/* Mobile: horizontal scroll with snap */}
+          <div className="md:hidden mt-12 -mx-5 px-5 flex gap-4 overflow-x-auto snap-x snap-mandatory scrollbar-none">
+            {menuExamples.map((m) => (
+              <div
+                key={m.src}
+                className="w-[75vw] shrink-0 snap-start"
+              >
+                <div className="relative aspect-[3/4] w-full overflow-hidden rounded-sm">
+                  <Image
+                    src={m.src}
+                    alt={m.alt}
+                    fill
+                    className="object-contain bg-white"
+                    sizes="75vw"
+                  />
+                </div>
+                <p className="mt-3 font-body text-[13px] text-ink/50">
+                  {m.caption}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Services 04-06 */}
+        <div className="flex flex-col gap-20 md:gap-30">
+          {services.slice(3).map((s, i) => {
+            const actualIndex = i + 3;
+            const imageLeft = actualIndex % 2 === 0;
+            return (
+              <div
+                key={s.num}
+                className="mx-auto max-w-7xl px-5 md:px-10 flex flex-col md:flex-row md:items-center gap-12 md:gap-20"
+              >
+                <div
+                  className={`md:w-1/2 ${
+                    imageLeft ? "md:order-1" : "md:order-2"
+                  }`}
+                >
+                  <div className="relative aspect-[4/5] w-full overflow-hidden rounded-sm">
+                    <Image
+                      src={s.image}
+                      alt={s.alt}
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 768px) 100vw, 50vw"
+                    />
+                  </div>
+                </div>
                 <div
                   className={`md:w-1/2 ${
                     imageLeft ? "md:order-2" : "md:order-1"

@@ -69,8 +69,8 @@ const services = [
   {
     num: "04",
     title: "Mocktails and Non-Alcoholic Options",
-    image: "/assets/services-hero.jpg",
-    alt: "A styled spread of cocktails and mocktails on the Clover bar.",
+    image: "/clover-new-images/services-mocktails-nonalcholic.jpg",
+    alt: "A selection of mocktails and non-alcoholic drinks on the Clover bar.",
     desc: "Every Clover menu includes real non-alcoholic options. Not just a soda water with lime. Proper mocktails, built with the same care as their alcoholic cousins, so every guest has something to raise.",
     included: [
       "At least two signature mocktails on every menu",
@@ -94,8 +94,8 @@ const services = [
   {
     num: "06",
     title: "Premium Mixers, Garnishes, and Bar Tools",
-    image: "/assets/services-premium-mixers.jpg",
-    alt: "Fresh mixers, hand-cut garnishes, and bar tools arranged on the Clover bar.",
+    image: "/assets/services-hero.jpg",
+    alt: "A styled spread of cocktails and bar details on the Clover mobile bar.",
     desc: "Everything you need for the bar, minus the alcohol. Fresh-squeezed juice, premium mixers, hand-cut fruit, house-made syrups, all the tools and glassware, and enough ice to last the night.",
     included: [
       "Fresh juices and premium mixers",
@@ -237,13 +237,13 @@ export default function ServicesPage() {
               exactly what you get when you book Clover for your event.
             </p>
           </div>
-          <div className="hidden md:block md:w-[40%]">
-            <div className="relative md:aspect-[4/3] w-full overflow-hidden rounded-sm">
+          <div className="md:w-[40%]">
+            <div className="relative aspect-[3/4] w-full overflow-hidden rounded-sm">
               <Image
-                src="/assets/services-hero.jpg"
-                alt="A styled spread of cocktails and bar details on the Clover mobile bar."
+                src="/assets/services-premium-mixers.jpg"
+                alt="Fresh mixers, hand-cut garnishes, and bar tools arranged on the Clover bar."
                 fill
-                className="object-cover"
+                className="object-contain"
                 sizes="(max-width: 768px) 100vw, 40vw"
                 priority
               />
@@ -255,8 +255,8 @@ export default function ServicesPage() {
       {/* ─── Section 2: What you bring / What I bring ─── */}
       <section data-bg="light" className="bg-white pb-24 md:pb-30">
         <div className="mx-auto max-w-7xl px-5 md:px-10 flex flex-col md:flex-row md:items-center gap-12 md:gap-20">
-          {/* Image column */}
-          <div className="md:w-1/2">
+          {/* Image column — desktop only */}
+          <div className="hidden md:block md:w-1/2">
             <div className="relative aspect-[4/5] w-full overflow-hidden rounded-sm">
               <Image
                 src="/assets/services-you-bring-bottles.jpg"
@@ -282,6 +282,19 @@ export default function ServicesPage() {
               everything else. During our planning call, I send a curated shopping
               list so you buy the right amount of the right things.
             </p>
+
+            {/* Bottles image — visible only on mobile, between copy and lists */}
+            <div className="mt-8 md:hidden">
+              <div className="relative aspect-[4/5] w-full overflow-hidden rounded-sm">
+                <Image
+                  src="/assets/services-you-bring-bottles.jpg"
+                  alt="Bottles and bar supplies arranged on the Clover mobile bar."
+                  fill
+                  className="object-cover"
+                  sizes="100vw"
+                />
+              </div>
+            </div>
 
             <div className="mt-10 flex flex-col sm:flex-row gap-10 sm:gap-16">
               {/* You bring */}

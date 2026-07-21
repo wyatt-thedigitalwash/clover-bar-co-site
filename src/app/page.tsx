@@ -105,7 +105,7 @@ const steps = [
   {
     num: "03",
     title: "Deposit",
-    desc: "A $100 non-refundable deposit reserves your date. Events totaling $1,200 or more require 50% to reserve.",
+    desc: "To officially reserve your event date, a signed contract and a non-refundable deposit equal to 50% of your total contracted amount are required. The remaining balance is due 30 calendar days prior to your event date, unless otherwise agreed upon in writing.",
   },
   {
     num: "04",

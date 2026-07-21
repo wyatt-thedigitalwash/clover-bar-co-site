@@ -176,6 +176,150 @@ const rows: GalleryRow[] = [
       },
     ],
   },
+  // Row 8: thirds (tall) — 34 moved up here
+  {
+    height: "h-[500px] md:h-[600px]",
+    images: [
+      {
+        src: "/assets/gallery-34-2.jpg",
+        alt: "The white Clover Bar Co. mobile bar on an outdoor rug with dried florals and a framed menu in a green forest.",
+        mobileAspect: "aspect-[2/3]",
+        widthClass: "w-1/3",
+      },
+      {
+        src: "/assets/gallery-24-2.jpg",
+        alt: "Two Aperol spritzes on a wood table beside a bouquet of orange roses and baby's breath against blooming azaleas.",
+        mobileAspect: "aspect-[2/3]",
+        widthClass: "w-1/3",
+      },
+      {
+        src: "/assets/gallery-33-2.jpg",
+        alt: "The Clover bar top set with a gold cocktail shaker, bar tools, two mocktails, and a framed menu in the woods.",
+        mobileAspect: "aspect-[2/3]",
+        widthClass: "w-1/3",
+      },
+    ],
+  },
+  // Row 9: thirds (extra tall) — 28 / 25 / 29 together
+  {
+    height: "h-[560px] md:h-[700px]",
+    images: [
+      {
+        src: "/assets/gallery-28-2.jpg",
+        alt: "Close-up of the white Clover Bar Co. bar front with two Aperol spritzes and orange roses on the lawn.",
+        mobileAspect: "aspect-[2/3]",
+        widthClass: "w-1/3",
+      },
+      {
+        src: "/assets/gallery-25-2.jpg",
+        alt: "The Clover mocktail bar styled with dried florals, paper straws, and a framed mocktail menu in the woods.",
+        mobileAspect: "aspect-[2/3]",
+        widthClass: "w-1/3",
+      },
+      {
+        src: "/assets/gallery-29-2.jpg",
+        alt: "Orange roses and baby's breath beside a framed signature-cocktail menu, halved oranges, and an Aperol spritz.",
+        mobileAspect: "aspect-[2/3]",
+        widthClass: "w-1/3",
+      },
+    ],
+  },
+  // Row 10: thirds (tall) — drinks
+  {
+    height: "h-[500px] md:h-[600px]",
+    images: [
+      {
+        src: "/assets/gallery-17-2.jpg",
+        alt: "Two Clover-branded cups on a wood bar rail against a green woodland backdrop, a yellow blueberry drink and a garnished pink drink.",
+        mobileAspect: "aspect-[2/3]",
+        widthClass: "w-1/3",
+      },
+      {
+        src: "/assets/gallery-18-2.jpg",
+        alt: "Three Clover mocktails beside dried florals, a jar of paper straws, and a framed menu on the wood bar.",
+        mobileAspect: "aspect-[2/3]",
+        widthClass: "w-1/3",
+      },
+      {
+        src: "/assets/gallery-26-2.jpg",
+        alt: "Four watermelon cocktails with lime and paper straws lined up along the bar mat at an outdoor railing.",
+        mobileAspect: "aspect-[2/3]",
+        widthClass: "w-1/3",
+      },
+    ],
+  },
+  // Row 11: thirds (tall) — the bars
+  {
+    height: "h-[500px] md:h-[600px]",
+    images: [
+      {
+        src: "/assets/gallery-21-2.jpg",
+        alt: "A monogrammed white mobile bar set with wine, a framed bar menu, and blue hydrangeas at an event.",
+        mobileAspect: "aspect-[3/4]",
+        widthClass: "w-1/3",
+      },
+      {
+        src: "/assets/gallery-27-2.jpg",
+        alt: "A full bar setup with wine, Tito's vodka, infused syrups, a garnish caddy, cups, and canned sodas against brick.",
+        mobileAspect: "aspect-[3/4]",
+        widthClass: "w-1/3",
+      },
+      {
+        src: "/assets/gallery-32-2.jpg",
+        alt: "The white Clover Bar Co. mobile bar on wheels styled with white and yellow florals against autumn foliage.",
+        mobileAspect: "aspect-[3/4]",
+        widthClass: "w-1/3",
+      },
+    ],
+  },
+  // Row 12: quarters — details
+  {
+    height: "h-[380px] md:h-[460px]",
+    images: [
+      {
+        src: "/assets/gallery-19-2.jpg",
+        alt: "Two Aperol spritzes garnished with orange slices beside Clover business cards and halved oranges, azaleas behind.",
+        mobileAspect: "aspect-[2/3]",
+        widthClass: "w-1/4",
+      },
+      {
+        src: "/assets/gallery-20-2.jpg",
+        alt: "Overhead of a chilled garnish tray with fresh lemon slices, mint, and blueberries on the bar.",
+        mobileAspect: "aspect-[3/4]",
+        widthClass: "w-1/4",
+      },
+      {
+        src: "/assets/gallery-22-2.jpg",
+        alt: "Behind-the-bar detail with Tito's vodka, house-infused syrups in gold-spouted bottles, an ice bucket, and bar tools.",
+        mobileAspect: "aspect-[3/4]",
+        widthClass: "w-1/4",
+      },
+      {
+        src: "/assets/gallery-31-2.jpg",
+        alt: "A framed The Night Before bar menu in dusty blue with blue hydrangeas and monogrammed napkins.",
+        mobileAspect: "aspect-[3/4]",
+        widthClass: "w-1/4",
+      },
+    ],
+  },
+  // Row 13: 50/50 — the two landscape shots
+  {
+    height: "h-[300px] md:h-[420px]",
+    images: [
+      {
+        src: "/assets/gallery-30-2.jpg",
+        alt: "Guests raising pink lemonade shots in a toast at a poolside celebration.",
+        mobileAspect: "aspect-[3/2]",
+        widthClass: "w-1/2",
+      },
+      {
+        src: "/assets/gallery-23-2.jpg",
+        alt: "Overhead of four pink cocktails in stemless cups garnished with lime wedges and purple orchids at a poolside bar.",
+        mobileAspect: "aspect-[4/3]",
+        widthClass: "w-1/2",
+      },
+    ],
+  },
 ];
 
 const allImages = rows.flatMap((r) => r.images);

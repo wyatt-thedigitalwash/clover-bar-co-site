@@ -78,7 +78,7 @@ export default function AboutPage() {
 
           {/* Copy column */}
           <div className="lg:w-[50%]">
-            <span className="font-body text-xs font-semibold uppercase tracking-[0.2em] text-forest">
+            <span className="font-body text-xs font-semibold uppercase tracking-[0.2em] text-clover">
               Meet Sydni
             </span>
             <h1 className="mt-5 font-display font-normal text-[40px] leading-[1.05] text-ink md:text-[56px]">
@@ -127,9 +127,9 @@ export default function AboutPage() {
       </section>
 
       {/* ─── Section 2: What I believe ─── */}
-      <section data-bg="dark" className="bg-cream py-24 md:py-30">
+      <section data-bg="light" className="bg-cream py-24 md:py-30">
         <div className="mx-auto max-w-[720px] px-5 md:px-10">
-          <span className="font-body text-xs font-semibold uppercase tracking-[0.2em] text-forest">
+          <span className="font-body text-xs font-semibold uppercase tracking-[0.2em] text-clover">
             What I believe
           </span>
           <h2 className="mt-4 font-display font-normal text-[30px] leading-[1.1] text-ink md:text-[44px]">
@@ -172,7 +172,7 @@ export default function AboutPage() {
         <div className="mx-auto max-w-7xl px-5 md:px-10 flex flex-col md:flex-row md:items-start gap-12 md:gap-20">
           {/* Left column: header */}
           <div className="md:w-[40%]">
-            <span className="font-body text-xs font-semibold uppercase tracking-[0.2em] text-forest">
+            <span className="font-body text-xs font-semibold uppercase tracking-[0.2em] text-clover">
               The details
             </span>
             <h2 className="mt-4 font-display font-normal text-[28px] leading-[1.1] text-ink md:text-[36px]">
@@ -184,7 +184,7 @@ export default function AboutPage() {
           <div className="md:w-[55%] grid grid-cols-1 md:grid-cols-2 gap-10">
             {stats.map((s) => (
               <div key={s.label}>
-                <span className="font-body text-[11px] font-medium uppercase tracking-[0.2em] text-ink/60">
+                <span className="font-body text-sm font-medium text-ink/60">
                   {s.label}
                 </span>
                 <p className="mt-2 font-display font-medium text-[28px] text-ink">

@@ -173,7 +173,7 @@ All required unless noted. Submission is emailed to `cloverbarco@gmail.com` via 
 
 ### Eyebrow label
 - Font: `font-body` (Inter), `text-xs`, `font-semibold`, `uppercase`, `tracking-[0.2em]`
-- Color: `text-forest` (`#0F3D2E`)
+- Color: `text-clover`
 - Margin below: `mt-4` to `mt-5` before headline
 - Use for: section openers to categorize the content below
 
@@ -202,7 +202,7 @@ All required unless noted. Submission is emailed to `cloverbarco@gmail.com` via 
 
 ### Roman numeral caption (I., II. style)
 - Numeral: `font-display`, `italic`, `font-normal`, `text-xl`, `text-clover`
-- Label: `font-body`, `text-[11px]`, `font-medium`, `uppercase`, `tracking-[0.2em]`, `text-ink/70`
+- Label: `font-body`, `text-sm`, `text-ink/70`, sentence case
 - Space between numeral and label: `mt-1`
 - Use for: editorial photo sequences
 
@@ -250,7 +250,7 @@ All required unless noted. Submission is emailed to `cloverbarco@gmail.com` via 
 - Inner container: `mx-auto max-w-7xl px-5 md:px-10 py-16 md:py-20`
 - Three-column grid: `grid-cols-1 md:grid-cols-3`, `gap-12 md:gap-8`
 - Column 1: Logo (`font-display text-forest text-xl font-semibold`) + tagline (`font-display italic text-sm text-ink/60`)
-- Column 2 & 3 labels: `font-body text-xs font-semibold uppercase tracking-widest text-ink/40`
+- Column 2 & 3 labels: `font-body text-sm font-medium text-ink/50`, sentence case
 - Column 2 & 3 values: `font-body text-sm text-ink`, hover `text-clover`
 - Copyright row: `border-t border-[#E8E5DF] py-6`, `font-body text-xs text-ink/40`, centered
 
@@ -276,6 +276,10 @@ All required unless noted. Submission is emailed to `cloverbarco@gmail.com` via 
 ### Eyebrow to headline
 - `mt-4` (16px) standard
 - `mt-5` (20px) hero sections
+
+### Small labels (form fields, contact details, list group labels)
+- `font-body text-sm font-medium`, sentence case, no letter-spacing
+- Color: `text-forest` (form fields), `text-clover` (list group labels), `text-ink/60` (info labels)
 
 ### Headline to body copy
 - `mt-6` (24px) standard paragraphs

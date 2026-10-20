@@ -23,7 +23,7 @@ const details = [
 ];
 
 const labelClass =
-  "font-body text-[11px] font-medium uppercase tracking-widest text-ink/40";
+  "font-body text-sm font-medium text-ink/50";
 
 const linkClass =
   "font-body text-[14px] text-ink/70 transition-colors duration-150 hover:text-clover";

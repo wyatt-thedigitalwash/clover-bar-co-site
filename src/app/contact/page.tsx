@@ -32,7 +32,7 @@ export default function ContactPage() {
       {/* ─── Section 1: Page hero ─── */}
       <section data-bg="light" className="bg-white pt-14 md:pt-18 pb-12 md:pb-16">
         <div className="mx-auto max-w-7xl px-5 md:px-10">
-          <span className="font-body text-xs font-semibold uppercase tracking-[0.2em] text-forest">
+          <span className="font-body text-xs font-semibold uppercase tracking-[0.2em] text-clover">
             Inquire
           </span>
           <h1 className="mt-4 font-display font-normal text-[30px] leading-[1.1] text-ink md:text-[44px]">
@@ -57,7 +57,7 @@ export default function ContactPage() {
           {/* Right column: supporting info */}
           <div className="md:w-[35%] flex flex-col gap-8">
             <div>
-              <span className="font-body text-[11px] font-medium uppercase tracking-[0.2em] text-ink/60">
+              <span className="font-body text-sm font-medium text-ink/60">
                 Email
               </span>
               <p className="mt-2">
@@ -71,7 +71,7 @@ export default function ContactPage() {
             </div>
 
             <div>
-              <span className="font-body text-[11px] font-medium uppercase tracking-[0.2em] text-ink/60">
+              <span className="font-body text-sm font-medium text-ink/60">
                 Instagram
               </span>
               <p className="mt-2">
@@ -87,7 +87,7 @@ export default function ContactPage() {
             </div>
 
             <div>
-              <span className="font-body text-[11px] font-medium uppercase tracking-[0.2em] text-ink/60">
+              <span className="font-body text-sm font-medium text-ink/60">
                 Service area
               </span>
               <p className="mt-2 font-body text-base text-ink">
@@ -96,7 +96,7 @@ export default function ContactPage() {
             </div>
 
             <div>
-              <span className="font-body text-[11px] font-medium uppercase tracking-[0.2em] text-ink/60">
+              <span className="font-body text-sm font-medium text-ink/60">
                 Response time
               </span>
               <p className="mt-2 font-body text-base text-ink">
@@ -105,7 +105,7 @@ export default function ContactPage() {
             </div>
 
             <div>
-              <span className="font-body text-[11px] font-medium uppercase tracking-[0.2em] text-ink/60">
+              <span className="font-body text-sm font-medium text-ink/60">
                 What happens next
               </span>
               <ol className="mt-3 flex flex-col gap-2">

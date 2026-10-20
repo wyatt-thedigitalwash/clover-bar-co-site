@@ -1,0 +1,40 @@
+
+### twistbartendingservice.com  status=20000 total_ranked=1670  est_traffic=23907.02639877796
+  /bartending-jobs/                                                      kws=19  bartending hiring near me(90500,#3); bartenders needed near me(90500,#7); indeed bartending jobs near me(4400,#29); hiring bartenders(2900,#7)
+  /the-ultimate-wedding-planning-checklist-50-essential-steps-to-plan-yo kws=17  weddings plan(74000,#47); wedding todo list(18100,#59); wedding planning to do list(18100,#64); wedding checklist(18100,#68)
+  /alcohol-calculator/                                                   kws=18  wedding reception drink calculator(5400,#40); wedding reception alcohol calculator(5400,#37); wedding liquor calculator(5400,#13); wedding drink calculator(5400,#16)
+  /                                                                      kws=37  twist bar(12100,#28); bartender for hire(2900,#2); mobile bartender(2400,#12); wedding bartender(1900,#1)
+  /bartending-school/bartending-school-houston/                          kws=4  bartending school(27100,#42); bartender course online(2900,#59); online bartending courses(480,#71); bartending courses online(480,#59)
+  /total-wine-coupons/                                                   kws=2  total wine coupon(14800,#18); total wine and more coupons(14800,#18)
+  /bartending-school/bartending-school-omaha/                            kws=5  bartender schools near me(8100,#14); bartending classes near me(5400,#48); bartender training near me(5400,#20); bartender courses near me(5400,#22)
+  /mobile-bartenders-in-fort-worth-texas/                                kws=3  mobile bar(12100,#75); mobile bar for wedding(880,#58); mobile bartending business(260,#23)
+
+### vintage-cocktail.com  status=20000 total_ranked=34  est_traffic=6.287999950349331
+  /portland-me                                                           kws=19  bar trucks(320,#49); loving cup bar co(90,#33); mobile beer truck near me(70,#23); maeve's mobile cocktail hour reviews(70,#25)
+  /                                                                      kws=5  cocktail caravan(320,#45); vintage cocktail camper(170,#15); the vintage horse(140,#36); maeve's mobile cocktail hour(90,#27)
+  /boston-ma                                                             kws=5  mobile bar boston(210,#33); liquor trucks(50,#30); liquor truck(50,#29); boston beverage catering(50,#44)
+  /nashua-nh                                                             kws=3  mobile beer trucks(170,#44); alcohol truck(90,#41); beer trucks for events(70,#51)
+  /tent-rentals                                                          kws=1  tent rental nh(110,#52)
+  /manchester-nh                                                         kws=1  vintage mobile bar(90,#20)
+
+### barmastersmobilebartending.com  status=20000 total_ranked=1262  est_traffic=2823.917015362531
+  /more/signature-cocktails/                                             kws=53  bar drinks(12100,#43); cocktails menus(2900,#57); cocktail menu(2900,#55); premium cocktails(2400,#52)
+  /barmasters-blog/wedding-alcohol-calculators-the-ultimate-guide/       kws=10  wedding reception drink calculator(5400,#18); wedding reception alcohol calculator(5400,#17); wedding liquor calculator(5400,#20); wedding drink calculator(5400,#13)
+  /barmasters-blog/open-bar-packages-guide/                              kws=9  open bar(12100,#9); open bar meaning(2900,#25); definition of open bar(2900,#20); define open bar(2900,#28)
+  /                                                                      kws=21  bartenders near me(2900,#12); barbees(2400,#50); mobile bartender service(1600,#31); mobile bartending services(1300,#31)
+  /barmasters-blog/wedding-signature-cocktail-ideas/                     kws=3  wedding signature drinks(4400,#77); specialty wedding drinks(4400,#76); wedding cocktails drinks(1000,#85)
+  /barmasters-blog/open-bar-catering-cost-guide/                         kws=21  wedding open bar cost(880,#15); open bar wedding price(880,#17); open bar cost wedding(880,#15); how much open bar wedding(880,#25)
+  /quote-utah/                                                           kws=10  bartender for hire(2900,#14); bartender for hire near me(590,#12); mobile bar service near me(480,#35); rent bartenders(390,#26)
+  /barmasters-blog/pro-tips-on-how-to-plan-a-wedding-as-a-wedding-planne kws=1  wedding planner how to(5400,#23)
+
+### sunsetsipsmobilebar.net  status=20000 total_ranked=7  est_traffic=29.271000623703003
+  /appointments                                                          kws=1  sunset sips(480,#40)
+  /                                                                      kws=4  royal bee bartending(110,#43); sunset sips mobile bar(90,#1); maeve's mobile cocktail hour(90,#28); simonds mobile bar with wine storage(30,#79)
+  /services                                                              kws=1  sip mobile bar(170,#25)
+  /how-it-works                                                          kws=1  what time do bars close in new hampshire(30,#44)
+
+### prbartending.com  status=20000 total_ranked=11  est_traffic=4.9519999250769615
+  /                                                                      kws=11  the bearded barkeep(110,#17); royal bee bartending(110,#18); waitstaff definition(70,#58); premier bartending services(70,#22)
+cost 0.1382
+
+[exited with code 0]

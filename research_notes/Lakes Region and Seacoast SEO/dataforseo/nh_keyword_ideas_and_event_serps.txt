@@ -1,0 +1,84 @@
+ideas 20000 Ok. cost 0.09
+total ideas 938
+    50 mobile bartending
+    50 bartending class near me
+    40 licensed bartenders
+    20 mocktail bar
+    20 mixology classes near me
+    20 mixology classes
+    20 classes for mixology
+
+=== SERPs (NH)
+
+### corporate event bartender nh
+  MAP: PR Bartending & Waitstaff
+  MAP: DeeLuxe Bartending and Event Staffing
+  MAP: The Traveling Cocktail & Event Co.
+   1. https://www.facebook.com/bespokebartendingnh/
+   2. https://www.theknot.com/marketplace/bespoke-bartending-barrington-nh-2084551
+   3. https://www.mobilecocktailhour.com/
+   4. https://www.facebook.com/groups/126432684504000/posts/2195138710966710/
+   5. https://www.theknot.com/marketplace/bar-services-concord-nh
+   6. https://www.facebook.com/ontherocksnh/
+   7. https://www.zola.com/wedding-vendors/wedding-bar-services/in-the-mix-beverage-catering
+   8. https://www.ziprecruiter.com/Jobs/Event-Bartender/--in-New-Hampshire
+   9. https://bio.site/thetravelingcocktailnh
+
+### private party bartender nh
+  MAP: PR Bartending & Waitstaff
+  MAP: The Bearded Barkeep
+  MAP: Bar Lyon Premium Bartending Services
+   1. https://www.facebook.com/bespokebartendingnh/
+   2. https://thetipsytrailerconh.com/
+   3. https://www.theknot.com/marketplace/bar-services-concord-nh
+   4. https://bio.site/thetravelingcocktailnh
+   5. https://www.gigsalad.com/Event-Services/Bartender/NH/Londonderry
+   6. https://www.facebook.com/groups/everythinglakewinnipesaukee/posts/25843648178652283/
+   7. https://www.theknot.com/marketplace/bespoke-bartending-barrington-nh-2084551
+   8. https://thetravelingcocktailnh.com/
+   9. https://www.indeed.com/q-event-bartender-l-new-hampshire-jobs.html
+
+### birthday party bartender nh
+  MAP: PR Bartending & Waitstaff
+  MAP: The Bearded Barkeep
+  MAP: Bar Lyon Premium Bartending Services
+   1. https://barmastersmobilebartending.com/locations/bartender-for-weddings-in-dover-nh/
+   2. https://www.theknot.com/marketplace/bar-services-concord-nh
+   3. https://www.facebook.com/groups/286403928622534/posts/2091460768116832/
+   4. https://barmastersmobilebartending.com/locations/mobile-bartender-for-weddings-in-manchester-nh/
+   5. https://www.yelp.com/biz/pour-me-bartending-manchester
+   6. https://www.theknot.com/marketplace/bar-services-lebanon-nh
+   7. https://barmastersmobilebartending.com/locations/holiday-party-bartending-service-in-concord-nh/
+   8. https://www.theknot.com/marketplace/elevate-mobile-bar-eaton-center-nh-2084076
+   9. https://barmastersmobilebartending.com/locations/graduation-party-bartender-in-rochester-nh/
+
+### cocktail class nh
+
+### bartender for wedding new hampshire
+  MAP: PR Bartending & Waitstaff
+  MAP: DeeLuxe Bartending and Event Staffing
+  MAP: Bar Lyon Premium Bartending Services
+   1. https://www.theknot.com/marketplace/bar-services/new-hampshire
+   2. https://www.facebook.com/groups/381872331427612/posts/735559362725572/
+   3. https://deeluxebartending.com/
+   4. https://www.royalbartendingnh.com/
+   5. https://poursandpetalsevents.com/
+   6. https://twistbartendingservice.com/nh/
+   7. https://www.indeed.com/q-wedding-bartending-l-new-hampshire-jobs.html
+   8. https://bespokebartendingnh.com/
+   9. https://www.sunsetsipsmobilebar.net/
+
+### mocktail bar nh
+  MAP: without. Alcohol Free Restaurant
+  MAP: Sunset Sips Mobile Bar
+  MAP: TheTipsyTrailerCo
+   1. https://www.facebook.com/manchesterinformation/posts/1524726746337544/
+   2. https://www.facebook.com/groups/nheats/posts/1101518047068805/
+   3. https://www.reddit.com/r/ManchesterNH/comments/14jijqh/nondrinker_nightlife_recommendations/
+   4. https://www.yelp.com/search?find_desc=Non+Alcoholic+Drinks&find_loc=Dover%2C+NH+03820
+   5. https://industryeastbar.com/
+   6. https://www.yahoo.com/news/us/articles/nh-liquor-stores-manchester-bar-224600242.html
+   7. http://westernwhitemtns.com/creative-sips-without-the-spirits/
+cost 0.102
+
+[exited with code 0]

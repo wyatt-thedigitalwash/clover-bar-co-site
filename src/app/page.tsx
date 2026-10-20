@@ -150,7 +150,7 @@ export default function Home() {
             paddingBottom: "calc(80px + env(safe-area-inset-bottom, 0px))",
           }}
         >
-          <span className="font-body text-xs font-semibold uppercase tracking-[0.2em] text-forest">
+          <span className="font-body text-xs font-semibold uppercase tracking-[0.2em] text-clover">
             Mobile Bartending, New Hampshire
           </span>
           <h1 className="mt-5 font-display font-normal text-[40px] leading-[1.05] text-ink">
@@ -174,7 +174,7 @@ export default function Home() {
       >
         {/* Copy column: constrained to max-w container with left padding */}
         <div className="w-[50%] shrink-0 pl-[max(2.5rem,calc((100vw-80rem)/2+2.5rem))]" style={{ paddingTop: "var(--header-h)" }}>
-          <span className="font-body text-xs font-semibold uppercase tracking-[0.2em] text-forest">
+          <span className="font-body text-xs font-semibold uppercase tracking-[0.2em] text-clover">
             Mobile Bartending, New Hampshire
           </span>
           <p role="heading" aria-level={1} className="mt-5 font-display font-normal text-[68px] leading-[1.05] text-ink">
@@ -229,7 +229,7 @@ export default function Home() {
 
           {/* Copy column */}
           <div className="lg:w-[50%]">
-            <span className="font-body text-xs font-semibold uppercase tracking-[0.2em] text-forest">
+            <span className="font-body text-xs font-semibold uppercase tracking-[0.2em] text-clover">
               Meet your bartender
             </span>
             <h2 className="mt-5 font-display font-normal text-[40px] leading-[1.05] text-ink md:text-[56px]">
@@ -274,7 +274,7 @@ export default function Home() {
         <div className="mx-auto max-w-7xl px-5 md:px-10 flex flex-col md:flex-row md:items-stretch gap-12 md:gap-20">
           {/* Left column */}
           <div className="md:w-1/2 md:shrink-0 flex flex-col">
-            <span className="font-body text-xs font-semibold uppercase tracking-[0.2em] text-forest">
+            <span className="font-body text-xs font-semibold uppercase tracking-[0.2em] text-clover">
               What I bring
             </span>
             <h2 className="mt-4 font-display font-normal text-[30px] leading-[1.1] text-ink md:text-[40px]">
@@ -323,7 +323,7 @@ export default function Home() {
       <section data-bg="light" className="bg-white py-16 md:py-24">
         {/* Intro */}
         <div className="mx-auto max-w-7xl px-5 md:px-10 mb-12 md:mb-16">
-          <span className="font-body text-xs font-semibold uppercase tracking-[0.2em] text-forest">
+          <span className="font-body text-xs font-semibold uppercase tracking-[0.2em] text-clover">
             The craft
           </span>
           <h2 className="mt-4 max-w-[600px] font-display font-normal text-[30px] leading-[1.1] text-ink md:text-[44px]">
@@ -348,7 +348,7 @@ export default function Home() {
                 <p className="font-display italic font-normal text-xl text-clover">
                   {m.numeral}
                 </p>
-                <p className="mt-1 font-body text-[11px] font-medium uppercase tracking-[0.2em] text-ink/70">
+                <p className="mt-1 font-body text-sm text-ink/70">
                   {m.label}
                 </p>
               </div>
@@ -378,7 +378,7 @@ export default function Home() {
                   <p className="font-display italic font-normal text-xl text-clover">
                     {m.numeral}
                   </p>
-                  <p className="mt-1 font-body text-[11px] font-medium uppercase tracking-[0.2em] text-ink/70">
+                  <p className="mt-1 font-body text-sm text-ink/70">
                     {m.label}
                   </p>
                 </div>
@@ -391,7 +391,7 @@ export default function Home() {
       {/* ─── Section 5: How it works ─── */}
       <section data-bg="light" className="bg-white py-24 md:py-30">
         <div className="mx-auto max-w-7xl px-5 md:px-10">
-          <span className="font-body text-xs font-semibold uppercase tracking-[0.2em] text-forest">
+          <span className="font-body text-xs font-semibold uppercase tracking-[0.2em] text-clover">
             How it works
           </span>
           <h2 className="mt-4 font-display font-normal text-[30px] leading-[1.1] text-ink md:text-[44px]">

@@ -3,6 +3,13 @@
 
 import { NextResponse } from "next/server";
 import { Resend } from "resend";
+import {
+  EVENT_TYPES,
+  BAR_OPTIONS,
+  PACKAGE_OPTIONS,
+  REFERRAL_OPTIONS,
+  isAllowedOption,
+} from "@/lib/inquiryOptions";
 
 const REQUIRED_FIELDS = [
   "fullName",
@@ -14,6 +21,8 @@ const REQUIRED_FIELDS = [
   "endTime",
   "eventLocation",
   "eventType",
+  "barChoice",
+  "barPackage",
 ] as const;
 
 function isValidEmail(email: string): boolean {
@@ -41,6 +50,19 @@ export async function POST(request: Request) {
       );
     }
 
+    const invalidChoice =
+      !isAllowedOption(EVENT_TYPES, body.eventType) ||
+      !isAllowedOption(BAR_OPTIONS, body.barChoice) ||
+      !isAllowedOption(PACKAGE_OPTIONS, body.barPackage) ||
+      (body.referralSource &&
+        !isAllowedOption(REFERRAL_OPTIONS, body.referralSource));
+    if (invalidChoice) {
+      return NextResponse.json(
+        { success: false, error: "Please choose from the listed options." },
+        { status: 400 }
+      );
+    }
+
     const {
       fullName,
       email,
@@ -51,8 +73,11 @@ export async function POST(request: Request) {
       endTime,
       eventLocation,
       eventType,
+      barChoice,
+      barPackage,
       budget,
       details,
+      referralSource,
     } = body;
 
     const row = (label: string, value: string) =>
@@ -70,9 +95,12 @@ export async function POST(request: Request) {
       row("End Time", endTime),
       row("Location", eventLocation),
       row("Event Type", eventType),
+      row("Bar", barChoice),
+      row("Package", barPackage),
       row("Guests", guestCount),
       budget ? row("Budget", budget) : "",
       details ? row("Details", details.replace(/\n/g, "<br/>")) : "",
+      referralSource ? row("Heard About Us", referralSource) : "",
     ].join("");
 
     const htmlBody = `
@@ -105,9 +133,12 @@ export async function POST(request: Request) {
       `Event end time: ${endTime}`,
       `Event location: ${eventLocation}`,
       `Type of event: ${eventType}`,
+      `Bar: ${barChoice}`,
+      `Bar package: ${barPackage}`,
       `Estimated guests: ${guestCount}`,
       budget ? `Budget: ${budget}` : null,
       details ? `Additional details: ${details}` : null,
+      referralSource ? `How they heard about us: ${referralSource}` : null,
     ]
       .filter(Boolean)
       .join("\n");

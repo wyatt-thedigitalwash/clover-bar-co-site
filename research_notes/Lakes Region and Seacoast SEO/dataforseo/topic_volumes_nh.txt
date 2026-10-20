@@ -1,0 +1,63 @@
+United States 50301 cost 0
+New Hampshire,United States 20000 cost 0.09
+      0    10  wedding bartender
+      0    10  wedding bartending
+      0    10  wedding bar service
+      0    10  bartender for wedding
+      0    10  wedding bartender cost
+      0    10  how much does a wedding bartender cost
+      0    10  wedding mobile bar
+      0    10  mobile bar for wedding
+      0    10  wedding bar
+      0     0  byob wedding bartender
+      0    10  wedding bartending services
+      0    10  corporate event bartender
+      0     0  corporate bartending
+      0     0  corporate event bar service
+      0     0  office party bartender
+      0     0  company holiday party bartender
+      0    10  private party bartender
+      0    10  bartender for private party
+      0    10  bartender for house party
+      0     0  bartender for birthday party
+      0     0  birthday party bartender
+      0    10  party bartender
+      0    10  hire bartender for party
+      0     0  bartender for party cost
+      0     0  bachelorette party bartender
+      0     0  graduation party bartender
+      0    10  holiday party bartender
+      0     0  christmas party bartender
+      0     0  engagement party bartender
+      0     0  bridal shower bartender
+      0     0  baby shower mocktail bar
+      0     0  rehearsal dinner bartender
+      0     0  backyard party bartender
+      0     0  fundraiser bartender
+      0     0  festival bartender
+      0     0  tailgate bartender
+      0    10  cocktail class
+      0     0  private cocktail class
+      0    10  cocktail making class
+      0    20  mixology class
+      0     0  cocktail class at home
+      0    10  cocktail party ideas
+      0    20  mocktail bar
+      0    10  mocktail bar wedding
+      0    10  non alcoholic bar
+      0    10  dry wedding
+      0     0  sober wedding
+      0    10  how much alcohol for wedding
+      0    20  wedding alcohol calculator
+      0    10  how much alcohol for party
+      0    10  party alcohol calculator
+      0    10  how many bartenders per guest
+      0    20  signature cocktails for wedding
+      0    20  wedding signature drinks
+      0     0  bartender cost per hour
+      0    10  how much to tip bartender at wedding
+      0     0  do i need a bartender for my wedding
+      0    10  liquor liability insurance wedding
+      0     0  can you bring your own alcohol to a wedding venue
+
+[exited with code 0]

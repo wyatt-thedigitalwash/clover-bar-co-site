@@ -10,7 +10,79 @@ export type GalleryRow = {
 };
 
 export const rows: GalleryRow[] = [
-  // Row 1: 50/50
+  // Row 1: 50/50 (extra tall) -- bar setups
+  {
+    height: "h-[560px] md:h-[720px]",
+    images: [
+      {
+        src: "/assets/gallery-38-2.jpg",
+        alt: "A bar setup on a deck with house syrups in gold-spouted bottles, vodka, red wine, stacked cups, and gold shakers.",
+        mobileAspect: "aspect-[3/4]",
+        widthClass: "w-1/2",
+      },
+      {
+        src: "/assets/gallery-39-2.jpg",
+        alt: "A his and hers Signature Drinks menu beside pink dahlias and bottled rum punch and strawberry margaritas.",
+        mobileAspect: "aspect-[3/4]",
+        widthClass: "w-1/2",
+      },
+    ],
+  },
+  // Row 2: thirds (tall) -- the bar, a cocktail close-up, the bartender
+  {
+    height: "h-[500px] md:h-[600px]",
+    images: [
+      {
+        src: "/assets/gallery-35-2.jpg",
+        alt: "The white Clover Bar Co. mobile bar with the green Clover logo, two cocktails, a pink-framed menu, and peonies by the woods.",
+        mobileAspect: "aspect-[2/3]",
+        widthClass: "w-1/3",
+      },
+      {
+        src: "/assets/gallery-36-2.jpg",
+        alt: "A pink cocktail with mint and a yellow cocktail with a cherry beside a pink-framed signature cocktail menu.",
+        mobileAspect: "aspect-[2/3]",
+        widthClass: "w-1/3",
+      },
+      {
+        src: "/assets/gallery-37-2.jpg",
+        alt: "A smiling bartender behind a white bar with a bouquet of dahlias, an ice bucket, and a Feeling Tipsy sign.",
+        mobileAspect: "aspect-[2/3]",
+        widthClass: "w-1/3",
+      },
+    ],
+  },
+  // Row 3: quarters -- details
+  {
+    height: "h-[380px] md:h-[460px]",
+    images: [
+      {
+        src: "/assets/gallery-40-2.jpg",
+        alt: "Malibu, 1800 tequila, and bottled red cocktails on an indoor bar with fresh limes, strawberries, and pink florals.",
+        mobileAspect: "aspect-[2/3]",
+        widthClass: "w-1/4",
+      },
+      {
+        src: "/assets/gallery-41-2.jpg",
+        alt: "A garnish station with citrus, mint, labeled watermelon and cranberry mixers, and bar tools on the Clover bar.",
+        mobileAspect: "aspect-[2/3]",
+        widthClass: "w-1/4",
+      },
+      {
+        src: "/assets/gallery-42-2.jpg",
+        alt: "A bouquet of dahlias beside an ice bucket, a Feeling Tipsy sign, and Clover business cards on a white bar.",
+        mobileAspect: "aspect-[2/3]",
+        widthClass: "w-1/4",
+      },
+      {
+        src: "/assets/gallery-43-2.jpg",
+        alt: "Corona, Budweiser, Bud Light, Coors Light, and hard seltzer cans lined up on the bar overlooking a green lawn.",
+        mobileAspect: "aspect-[2/3]",
+        widthClass: "w-1/4",
+      },
+    ],
+  },
+  // Row 4: 50/50
   {
     height: "h-[420px] md:h-[560px]",
     images: [
@@ -28,7 +100,7 @@ export const rows: GalleryRow[] = [
       },
     ],
   },
-  // Row 2: thirds
+  // Row 5: thirds
   {
     height: "h-[380px] md:h-[480px]",
     images: [
@@ -52,7 +124,7 @@ export const rows: GalleryRow[] = [
       },
     ],
   },
-  // Row 3: narrow + wide
+  // Row 6: narrow + wide
   {
     height: "h-[420px] md:h-[560px]",
     images: [
@@ -70,7 +142,7 @@ export const rows: GalleryRow[] = [
       },
     ],
   },
-  // Row 4: thirds
+  // Row 7: thirds
   {
     height: "h-[340px] md:h-[420px]",
     images: [
@@ -94,7 +166,7 @@ export const rows: GalleryRow[] = [
       },
     ],
   },
-  // Row 5: wide + narrow
+  // Row 8: wide + narrow
   {
     height: "h-[420px] md:h-[560px]",
     images: [
@@ -112,7 +184,7 @@ export const rows: GalleryRow[] = [
       },
     ],
   },
-  // Row 6: thirds
+  // Row 9: thirds
   {
     height: "h-[380px] md:h-[480px]",
     images: [
@@ -136,7 +208,7 @@ export const rows: GalleryRow[] = [
       },
     ],
   },
-  // Row 7: full width
+  // Row 10: full width
   {
     height: "h-[260px] md:h-[400px]",
     images: [
@@ -148,7 +220,7 @@ export const rows: GalleryRow[] = [
       },
     ],
   },
-  // Row 8: thirds (tall) — 34 moved up here
+  // Row 11: thirds (tall) — 34 moved up here
   {
     height: "h-[500px] md:h-[600px]",
     images: [
@@ -172,7 +244,7 @@ export const rows: GalleryRow[] = [
       },
     ],
   },
-  // Row 9: thirds (extra tall) — 28 / 25 / 29 together
+  // Row 12: thirds (extra tall) — 28 / 25 / 29 together
   {
     height: "h-[560px] md:h-[700px]",
     images: [
@@ -196,7 +268,7 @@ export const rows: GalleryRow[] = [
       },
     ],
   },
-  // Row 10: thirds (tall) — drinks
+  // Row 13: thirds (tall) — drinks
   {
     height: "h-[500px] md:h-[600px]",
     images: [
@@ -220,7 +292,7 @@ export const rows: GalleryRow[] = [
       },
     ],
   },
-  // Row 11: thirds (tall) — the bars
+  // Row 14: thirds (tall) — the bars
   {
     height: "h-[500px] md:h-[600px]",
     images: [
@@ -244,7 +316,7 @@ export const rows: GalleryRow[] = [
       },
     ],
   },
-  // Row 12: quarters — details
+  // Row 15: quarters — details
   {
     height: "h-[380px] md:h-[460px]",
     images: [
@@ -274,7 +346,7 @@ export const rows: GalleryRow[] = [
       },
     ],
   },
-  // Row 13: 50/50 — the two landscape shots
+  // Row 16: 50/50 — the two landscape shots
   {
     height: "h-[300px] md:h-[420px]",
     images: [
@@ -289,78 +361,6 @@ export const rows: GalleryRow[] = [
         alt: "Overhead of four pink cocktails in stemless cups garnished with lime wedges and purple orchids at a poolside bar.",
         mobileAspect: "aspect-[4/3]",
         widthClass: "w-1/2",
-      },
-    ],
-  },
-  // Row 14: thirds (tall) -- the bar, a cocktail close-up, the bartender
-  {
-    height: "h-[500px] md:h-[600px]",
-    images: [
-      {
-        src: "/assets/gallery-35-2.jpg",
-        alt: "The white Clover Bar Co. mobile bar with the green Clover logo, two cocktails, a pink-framed menu, and peonies by the woods.",
-        mobileAspect: "aspect-[2/3]",
-        widthClass: "w-1/3",
-      },
-      {
-        src: "/assets/gallery-36-2.jpg",
-        alt: "A pink cocktail with mint and a yellow cocktail with a cherry beside a pink-framed signature cocktail menu.",
-        mobileAspect: "aspect-[2/3]",
-        widthClass: "w-1/3",
-      },
-      {
-        src: "/assets/gallery-37-2.jpg",
-        alt: "A smiling bartender behind a white bar with a bouquet of dahlias, an ice bucket, and a Feeling Tipsy sign.",
-        mobileAspect: "aspect-[2/3]",
-        widthClass: "w-1/3",
-      },
-    ],
-  },
-  // Row 15: 50/50 (extra tall) -- bar setups
-  {
-    height: "h-[560px] md:h-[720px]",
-    images: [
-      {
-        src: "/assets/gallery-38-2.jpg",
-        alt: "A bar setup on a deck with house syrups in gold-spouted bottles, vodka, red wine, stacked cups, and gold shakers.",
-        mobileAspect: "aspect-[3/4]",
-        widthClass: "w-1/2",
-      },
-      {
-        src: "/assets/gallery-39-2.jpg",
-        alt: "A his and hers Signature Drinks menu beside pink dahlias and bottled rum punch and strawberry margaritas.",
-        mobileAspect: "aspect-[3/4]",
-        widthClass: "w-1/2",
-      },
-    ],
-  },
-  // Row 16: quarters -- details
-  {
-    height: "h-[380px] md:h-[460px]",
-    images: [
-      {
-        src: "/assets/gallery-40-2.jpg",
-        alt: "Malibu, 1800 tequila, and bottled red cocktails on an indoor bar with fresh limes, strawberries, and pink florals.",
-        mobileAspect: "aspect-[2/3]",
-        widthClass: "w-1/4",
-      },
-      {
-        src: "/assets/gallery-41-2.jpg",
-        alt: "A garnish station with citrus, mint, labeled watermelon and cranberry mixers, and bar tools on the Clover bar.",
-        mobileAspect: "aspect-[2/3]",
-        widthClass: "w-1/4",
-      },
-      {
-        src: "/assets/gallery-42-2.jpg",
-        alt: "A bouquet of dahlias beside an ice bucket, a Feeling Tipsy sign, and Clover business cards on a white bar.",
-        mobileAspect: "aspect-[2/3]",
-        widthClass: "w-1/4",
-      },
-      {
-        src: "/assets/gallery-43-2.jpg",
-        alt: "Corona, Budweiser, Bud Light, Coors Light, and hard seltzer cans lined up on the bar overlooking a green lawn.",
-        mobileAspect: "aspect-[2/3]",
-        widthClass: "w-1/4",
       },
     ],
   },
